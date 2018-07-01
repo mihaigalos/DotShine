@@ -5442,92 +5442,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <rectangle x1="-1.651" y1="-0.127" x2="-0.889" y2="0.635" layer="51"/>
 <rectangle x1="0" y1="1.6002" x2="0.4318" y2="3.4798" layer="21"/>
 </package>
-<package name="JST-PH-2-SMT-RA">
-<description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
-<wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
-<wire x1="4" y1="3" x2="4" y2="-4.5" width="0.2032" layer="51"/>
-<wire x1="-4" y1="-4.5" x2="-4" y2="3" width="0.2032" layer="51"/>
-<wire x1="3.2" y1="-2" x2="-3.2" y2="-2" width="0.2032" layer="51"/>
-<wire x1="-3.2" y1="-2" x2="-3.2" y2="-4.5" width="0.2032" layer="51"/>
-<wire x1="-3.2" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="51"/>
-<wire x1="4" y1="-4.5" x2="3.2" y2="-4.5" width="0.2032" layer="51"/>
-<wire x1="3.2" y1="-4.5" x2="3.2" y2="-2" width="0.2032" layer="51"/>
-<wire x1="-2.25" y1="3" x2="2.25" y2="3" width="0.127" layer="21"/>
-<wire x1="4" y1="-0.5" x2="4" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="4" y1="-4.5" x2="3.15" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="3.15" y1="-4.5" x2="3.15" y2="-2" width="0.127" layer="21"/>
-<wire x1="3.15" y1="-2" x2="1.75" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.75" y1="-2" x2="-3.15" y2="-2" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="-2" x2="-3.15" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="-4.5" x2="-4" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="-4.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
-<smd name="2" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
-<smd name="1" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
-<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
-<text x="2.286" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
-<text x="-3.429" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
-</package>
-<package name="JST-PH-2-THM">
-<description>4UCon #01528
-http://www.4uconnector.com/online/object/4udrawing/01528.pdf</description>
-<wire x1="3" y1="-1.7" x2="0.5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-1.7" x2="0.5" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-2.2" x2="-0.5" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-2.2" x2="-0.5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-1.7" x2="-3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.7" x2="-3" y2="2.8" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.8" x2="3" y2="2.8" width="0.127" layer="21"/>
-<wire x1="3" y1="2.8" x2="3" y2="-1.7" width="0.127" layer="21"/>
-<pad name="1" x="1" y="0" drill="0.8" diameter="1.4224" rot="R180"/>
-<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4224" rot="R180"/>
-<text x="-2.8" y="-3.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="4.064" y="0.762" size="1.27" layer="21" font="vector" rot="R180">+</text>
-<text x="-3.302" y="0.762" size="1.27" layer="21" font="vector" rot="R180">-</text>
-</package>
-<package name="JST-PH-2-THM-RA">
-<description>&lt;b&gt;S2B-PH-K-S&lt;/b&gt; 
-&lt;p&gt;
-JST PH 2-pin thru-home side entry</description>
-<wire x1="-3" y1="6.3" x2="3" y2="6.3" width="0.127" layer="51"/>
-<wire x1="3" y1="6.3" x2="3" y2="-1.4" width="0.127" layer="51"/>
-<wire x1="-3" y1="-1.4" x2="-3" y2="6.3" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="-1.4" x2="-3" y2="-1.4" width="0.127" layer="51"/>
-<wire x1="3" y1="-1.4" x2="2.2" y2="-1.4" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="-1.4" x2="-2.2" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-2.2" y1="-0.3" x2="2.1" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-0.3" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-1.4" x2="2.2" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="6.3" x2="-0.3" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="3.4" x2="0.3" y2="3.4" width="0.127" layer="21"/>
-<wire x1="0.3" y1="3.4" x2="0.3" y2="6.3" width="0.127" layer="21"/>
-<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4224"/>
-<pad name="1" x="1" y="0" drill="0.8" diameter="1.4224"/>
-<text x="-2.7" y="-3.8" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="0.486" y="-2.096" size="1.4224" layer="21" ratio="12">+</text>
-<text x="-1.429" y="-1.896" size="1.4224" layer="21" ratio="12">-</text>
-</package>
-<package name="JST-PH-2-SMT">
-<wire x1="-4" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="51"/>
-<wire x1="4" y1="2.5" x2="4" y2="-2.5" width="0.2032" layer="51"/>
-<wire x1="-4" y1="-2.5" x2="-4" y2="2.5" width="0.2032" layer="51"/>
-<wire x1="4" y1="-2.5" x2="-4" y2="-2.5" width="0.2032" layer="51"/>
-<wire x1="-2.25" y1="2.5" x2="2.25" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4" y1="-0.5" x2="4" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="4" y1="-2.5" x2="1.75" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-1.75" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="-2.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
-<smd name="1" x="-1" y="-1.8" dx="1" dy="5.5" layer="1"/>
-<smd name="2" x="1" y="-1.8" dx="1" dy="5.5" layer="1"/>
-<smd name="NC1" x="-3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="NC2" x="3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
-<text x="-2.914" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
-<text x="2.271" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
-</package>
 <package name="SOT23-W">
 <description>&lt;b&gt;SOT23&lt;/b&gt; - Wave soldering</description>
 <wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
@@ -5652,16 +5566,6 @@ JST PH 2-pin thru-home side entry</description>
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 <symbol name="MOSFET-N">
 <wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
@@ -7071,57 +6975,6 @@ Small surface-mount magnetic buzzer</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
-<description>&lt;b&gt;JST 2-Pin Connectors of various flavors&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;SMT-RA (S2B-PH-SM4) 4UConnector #17311&lt;/li&gt;
-&lt;li&gt;SMT  (B2B-PH-SM4)&lt;/li&gt;
-&lt;li&gt;THM-RA (S2B-PH)&lt;/li&gt;
-&lt;li&gt;THM  (B2B-PH)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="-SMT-RA" package="JST-PH-2-SMT-RA">
-<connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-THM" package="JST-PH-2-THM">
-<connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-THM-RA" package="JST-PH-2-THM-RA">
-<connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SMT" package="JST-PH-2-SMT">
-<connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23874,219 +23727,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-IC-Memory">
-<description>&lt;h3&gt;SparkFun Memory ICs&lt;/h3&gt;
-This library contains memory ICs.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="WSON8-6X5MM">
-<wire x1="-2.5" y1="3" x2="-2.5" y2="-3" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-3" x2="2.5" y2="-3" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-3" x2="2.5" y2="3" width="0.127" layer="51"/>
-<wire x1="2.5" y1="3" x2="-2.5" y2="3" width="0.127" layer="51"/>
-<polygon width="0" layer="51">
-<vertex x="-0.435" y="-3"/>
-<vertex x="-0.835" y="-3"/>
-<vertex x="-0.835" y="-2.53124375" curve="-90"/>
-<vertex x="-0.70375625" y="-2.4"/>
-<vertex x="-0.554265625" y="-2.4" curve="-90"/>
-<vertex x="-0.435" y="-2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="0.835" y="-3"/>
-<vertex x="0.435" y="-3"/>
-<vertex x="0.435" y="-2.53124375" curve="-90"/>
-<vertex x="0.56624375" y="-2.4"/>
-<vertex x="0.715734375" y="-2.4" curve="-90"/>
-<vertex x="0.835" y="-2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-1.705" y="-3"/>
-<vertex x="-2.105" y="-3"/>
-<vertex x="-2.105" y="-2.53124375" curve="-90"/>
-<vertex x="-1.97375625" y="-2.4"/>
-<vertex x="-1.824265625" y="-2.4" curve="-90"/>
-<vertex x="-1.705" y="-2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="2.105" y="-3"/>
-<vertex x="1.705" y="-3"/>
-<vertex x="1.705" y="-2.53124375" curve="-90"/>
-<vertex x="1.83624375" y="-2.4"/>
-<vertex x="1.985734375" y="-2.4" curve="-90"/>
-<vertex x="2.105" y="-2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="0.435" y="3"/>
-<vertex x="0.835" y="3"/>
-<vertex x="0.835" y="2.53124375" curve="-90"/>
-<vertex x="0.70375625" y="2.4"/>
-<vertex x="0.554265625" y="2.4" curve="-90"/>
-<vertex x="0.435" y="2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-0.835" y="3"/>
-<vertex x="-0.435" y="3"/>
-<vertex x="-0.435" y="2.53124375" curve="-90"/>
-<vertex x="-0.56624375" y="2.4"/>
-<vertex x="-0.715734375" y="2.4" curve="-90"/>
-<vertex x="-0.835" y="2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="1.705" y="3"/>
-<vertex x="2.105" y="3"/>
-<vertex x="2.105" y="2.53124375" curve="-90"/>
-<vertex x="1.97375625" y="2.4"/>
-<vertex x="1.824265625" y="2.4" curve="-90"/>
-<vertex x="1.705" y="2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-2.105" y="3"/>
-<vertex x="-1.705" y="3"/>
-<vertex x="-1.705" y="2.53124375" curve="-90"/>
-<vertex x="-1.83624375" y="2.4"/>
-<vertex x="-1.985734375" y="2.4" curve="-90"/>
-<vertex x="-2.105" y="2.519265625"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="2.15" y="-1.7"/>
-<vertex x="-1.547921875" y="-1.7"/>
-<vertex x="-2.15" y="-1.097921875"/>
-<vertex x="-2.15" y="1.7"/>
-<vertex x="2.15" y="1.7"/>
-</polygon>
-<smd name="1" x="-1.905" y="-3" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="2" x="-0.635" y="-3" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="0.635" y="-3" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="4" x="1.905" y="-3" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="5" x="1.905" y="3" dx="1.4" dy="0.5" layer="1" rot="R270"/>
-<smd name="6" x="0.635" y="3" dx="1.4" dy="0.5" layer="1" rot="R270"/>
-<smd name="7" x="-0.635" y="3" dx="1.4" dy="0.5" layer="1" rot="R270"/>
-<smd name="8" x="-1.905" y="3" dx="1.4" dy="0.5" layer="1" rot="R270"/>
-<smd name="EP" x="0" y="0" dx="3.4" dy="4.3" layer="1" rot="R90"/>
-<wire x1="-2.627" y1="3.127" x2="-2.627" y2="-2.873" width="0.2032" layer="21"/>
-<wire x1="2.627" y1="-3.127" x2="2.627" y2="3.127" width="0.2032" layer="21"/>
-<wire x1="-2.627" y1="-2.873" x2="-2.326" y2="-3.127" width="0.2032" layer="21"/>
-<wire x1="2.326" y1="-3.127" x2="2.627" y2="-3.127" width="0.2032" layer="21"/>
-<wire x1="2.627" y1="3.127" x2="2.326" y2="3.127" width="0.2032" layer="21"/>
-<wire x1="-2.326" y1="3.127" x2="-2.627" y2="3.127" width="0.2032" layer="21"/>
-<circle x="-2.881" y="-3.381" radius="0.381" width="0" layer="21"/>
-</package>
-<package name="SOIC-8">
-<description>8-Pin SOIC 208-mil</description>
-<circle x="-3.194" y="-2.051" radius="0.3" width="0" layer="21"/>
-<wire x1="-2.64" y1="-2.64" x2="2.64" y2="-2.64" width="0.1524" layer="51"/>
-<wire x1="2.767" y1="-2.767" x2="2.767" y2="2.767" width="0.2032" layer="21"/>
-<wire x1="2.64" y1="2.64" x2="-2.64" y2="2.64" width="0.1524" layer="51"/>
-<wire x1="-2.767" y1="2.767" x2="-2.767" y2="-2.767" width="0.2032" layer="21"/>
-<wire x1="-2.64" y1="2.64" x2="-2.64" y2="-2.64" width="0.1524" layer="51"/>
-<wire x1="2.64" y1="-2.64" x2="2.64" y2="2.64" width="0.1524" layer="51"/>
-<wire x1="-2.44" y1="2.767" x2="-2.767" y2="2.767" width="0.2032" layer="21"/>
-<wire x1="2.767" y1="2.767" x2="2.44" y2="2.767" width="0.2032" layer="21"/>
-<wire x1="2.44" y1="-2.767" x2="2.767" y2="-2.767" width="0.2032" layer="21"/>
-<wire x1="-2.767" y1="-2.767" x2="-2.44" y2="-2.767" width="0.2032" layer="21"/>
-<rectangle x1="-2.0828" y1="-3.95" x2="-1.7272" y2="-2.64" layer="51"/>
-<rectangle x1="-0.8128" y1="-3.95" x2="-0.4572" y2="-2.64" layer="51"/>
-<rectangle x1="0.4572" y1="-3.95" x2="0.8128" y2="-2.64" layer="51"/>
-<rectangle x1="1.7272" y1="-3.95" x2="2.0828" y2="-2.64" layer="51"/>
-<rectangle x1="1.7272" y1="2.64" x2="2.0828" y2="3.95" layer="51" rot="R180"/>
-<rectangle x1="0.4572" y1="2.64" x2="0.8128" y2="3.95" layer="51" rot="R180"/>
-<rectangle x1="-0.8128" y1="2.64" x2="-0.4572" y2="3.95" layer="51" rot="R180"/>
-<rectangle x1="-2.0828" y1="2.64" x2="-1.7272" y2="3.95" layer="51" rot="R180"/>
-<smd name="1" x="-1.905" y="-3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="2" x="-0.635" y="-3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="3" x="0.635" y="-3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="4" x="1.905" y="-3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="5" x="1.905" y="3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="6" x="0.635" y="3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="7" x="-0.635" y="3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<smd name="8" x="-1.905" y="3.2512" dx="0.6096" dy="1.7018" layer="1"/>
-<text x="-2.9845" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.9845" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="bottom-center">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="W25Q32FV">
-<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<pin name="!CS!" x="-15.24" y="2.54" length="short"/>
-<pin name="!HOLD!(D3)" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="!WP!(D2)" x="-15.24" y="-2.54" length="short"/>
-<pin name="GND" x="-15.24" y="-5.08" length="short"/>
-<pin name="SCK" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="SI(D0)" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="SO(D1)" x="-15.24" y="0" length="short"/>
-<pin name="VCC" x="15.24" y="2.54" length="short" rot="R180"/>
-<text x="-12.7" y="5.334" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="W25Q32FV" prefix="U">
-<description>&lt;h3&gt;W25Q32FV 32Mb (4MB) Serial Flash Memory&lt;/h3&gt;
-&lt;p&gt;The W25Q32FV support the standard Serial Peripheral Interface (SPI), Dual/Quad I/O SPI as  well as 2-clocks instruction cycle Quad Peripheral Interface (QPI).&lt;/p&gt;
-&lt;p&gt;104MHz, SPI, 8-SOIC-EIAJ&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.winbond.com/resource-files/w25q32fv%20revh%20091613.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13794"&gt;SparkFun Blynk Board - ESP8266&lt;/a&gt; (WRL-13794)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="W25Q32FV" x="0" y="0"/>
-</gates>
-<devices>
-<device name="ZP" package="WSON8-6X5MM">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="1"/>
-<connect gate="G$1" pin="!HOLD!(D3)" pad="7"/>
-<connect gate="G$1" pin="!WP!(D2)" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI(D0)" pad="5"/>
-<connect gate="G$1" pin="SO(D1)" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
-<attribute name="VALUE" value="W25Q32FV" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SS" package="SOIC-8">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="1"/>
-<connect gate="G$1" pin="!HOLD!(D3)" pad="7"/>
-<connect gate="G$1" pin="!WP!(D2)" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI(D0)" pad="5"/>
-<connect gate="G$1" pin="SO(D1)" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-13229"/>
-<attribute name="VALUE" value="W25Q32FV" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Microcrystal-RTC">
 <packages>
 <package name="MC-RTC-C7">
@@ -24731,13 +24371,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
-<part name="U4" library="SparkFun-IC-Memory" deviceset="W25Q32FV" device="ZP" value="W25Q32FV"/>
-<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
-<part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="1.5kΩ"/>
-<part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="X2" library="Microcrystal-RTC" deviceset="MC-RTC-RV-4162-C7-I2C" device=""/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
@@ -24761,8 +24394,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
-<part name="CN2" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
-<part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
 <part name="D5" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="Q1" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="BSH103"/>
 <part name="U$4" library="AD1582" deviceset="AD1582" device=""/>
@@ -24786,7 +24417,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <text x="137.16" y="-147.32" size="3.81" layer="91">Authentification module</text>
 <text x="134.62" y="134.62" size="1.778" layer="91">white</text>
 <text x="134.62" y="124.46" size="1.778" layer="91">red</text>
-<text x="20.32" y="-142.24" size="1.778" layer="91">Use 128Mbit S25FL127SABNF instead.</text>
 <text x="25.4" y="-104.14" size="1.27" layer="91">Since nINT is conencted to CS_FLASH,
 special care when selecting the flash:
 avoid a self-generated HW interrupt</text>
@@ -24891,13 +24521,6 @@ avoid a self-generated HW interrupt</text>
 <instance part="JP3" gate="G$1" x="215.9" y="81.28"/>
 <instance part="JP4" gate="G$1" x="231.14" y="81.28"/>
 <instance part="+3V16" gate="G$1" x="254" y="-38.1"/>
-<instance part="U4" gate="G$1" x="40.64" y="-162.56"/>
-<instance part="+3V17" gate="G$1" x="58.42" y="-152.4"/>
-<instance part="SUPPLY23" gate="GND" x="25.4" y="-172.72"/>
-<instance part="SUPPLY24" gate="GND" x="68.58" y="-160.02" rot="R90"/>
-<instance part="C7" gate="G$1" x="60.96" y="-160.02" rot="R90"/>
-<instance part="R8" gate="G$1" x="25.4" y="-154.94" rot="R90"/>
-<instance part="+3V18" gate="G$1" x="25.4" y="-147.32"/>
 <instance part="X2" gate="G$1" x="38.1" y="-114.3"/>
 <instance part="+3V20" gate="G$1" x="73.66" y="-114.3"/>
 <instance part="SUPPLY25" gate="GND" x="17.78" y="-119.38"/>
@@ -24921,8 +24544,6 @@ avoid a self-generated HW interrupt</text>
 <instance part="SUPPLY34" gate="GND" x="8.89" y="-232.41" rot="MR0"/>
 <instance part="+3V22" gate="G$1" x="113.03" y="-198.12" rot="MR0"/>
 <instance part="SUPPLY36" gate="GND" x="82.55" y="-232.41" rot="MR0"/>
-<instance part="CN2" gate="G$1" x="113.03" y="-215.9" rot="MR90"/>
-<instance part="SUPPLY38" gate="GND" x="115.57" y="-232.41" rot="MR0"/>
 <instance part="D5" gate="G$1" x="-5.08" y="-209.55" rot="MR180"/>
 <instance part="Q1" gate="G$1" x="97.79" y="-207.01"/>
 <instance part="U$4" gate="G$1" x="64.77" y="-212.09"/>
@@ -25064,15 +24685,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY23" gate="GND" pin="GND"/>
-<wire x1="25.4" y1="-167.64" x2="25.4" y2="-170.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY24" gate="GND" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="X2" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <wire x1="22.86" y1="-116.84" x2="17.78" y2="-116.84" width="0.1524" layer="91"/>
@@ -25122,11 +24734,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="82.55" y1="-229.87" x2="82.55" y2="-217.17" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY38" gate="GND" pin="GND"/>
-<pinref part="CN2" gate="G$1" pin="1"/>
-<wire x1="115.57" y1="-229.87" x2="115.57" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
@@ -25357,18 +24964,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="VCC"/>
-<pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<wire x1="55.88" y1="-160.02" x2="58.42" y2="-160.02" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="-160.02" x2="58.42" y2="-154.94" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<junction x="58.42" y="-160.02"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="+3V18" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="X2" gate="G$1" pin="VDD"/>
 <pinref part="+3V20" gate="G$1" pin="+3V3"/>
 <wire x1="53.34" y1="-119.38" x2="73.66" y2="-119.38" width="0.1524" layer="91"/>
@@ -25386,12 +24981,9 @@ avoid a self-generated HW interrupt</text>
 </segment>
 <segment>
 <pinref part="+3V22" gate="G$1" pin="+3V3"/>
-<pinref part="CN2" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="-218.44" x2="113.03" y2="-212.09" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="113.03" y1="-212.09" x2="113.03" y2="-200.66" width="0.1524" layer="91"/>
 <wire x1="100.33" y1="-212.09" x2="113.03" y2="-212.09" width="0.1524" layer="91"/>
-<junction x="113.03" y="-212.09"/>
 </segment>
 <segment>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
@@ -25430,11 +25022,6 @@ avoid a self-generated HW interrupt</text>
 <wire x1="60.96" y1="125.73" x2="52.07" y2="125.73" width="0.1524" layer="91"/>
 <label x="52.07" y="125.73" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="SI(D0)"/>
-<wire x1="55.88" y1="-167.64" x2="58.42" y2="-167.64" width="0.1524" layer="91"/>
-<label x="58.42" y="-167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -25446,11 +25033,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="60.96" y1="123.19" x2="52.07" y2="123.19" width="0.1524" layer="91"/>
 <label x="52.07" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="SO(D1)"/>
-<wire x1="25.4" y1="-162.56" x2="22.86" y2="-162.56" width="0.1524" layer="91"/>
-<label x="22.86" y="-162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -25475,11 +25057,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="60.96" y1="120.65" x2="52.07" y2="120.65" width="0.1524" layer="91"/>
 <label x="52.07" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="SCK"/>
-<wire x1="55.88" y1="-165.1" x2="58.42" y2="-165.1" width="0.1524" layer="91"/>
-<label x="58.42" y="-165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -25796,13 +25373,6 @@ avoid a self-generated HW interrupt</text>
 </segment>
 </net>
 <net name="CS_FLASH" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="!CS!"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="-160.02" x2="22.86" y2="-160.02" width="0.1524" layer="91"/>
-<junction x="25.4" y="-160.02"/>
-<label x="22.86" y="-160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0/PCINT8)"/>
 <wire x1="76.2" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
