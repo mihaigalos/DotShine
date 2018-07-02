@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24450,6 +24450,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
+<part name="J1" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 </parts>
 <sheets>
 <sheet>
@@ -24590,7 +24591,7 @@ avoid a self-generated HW interrupt</text>
 <instance part="SUPPLY35" gate="GND" x="31.75" y="-232.41" rot="MR0"/>
 <instance part="C13" gate="G$1" x="46.99" y="-222.25" rot="MR0"/>
 <instance part="SUPPLY34" gate="GND" x="8.89" y="-232.41" rot="MR0"/>
-<instance part="+3V22" gate="G$1" x="113.03" y="-198.12" rot="MR0"/>
+<instance part="+3V22" gate="G$1" x="113.03" y="-187.96" rot="MR0"/>
 <instance part="SUPPLY36" gate="GND" x="82.55" y="-232.41" rot="MR0"/>
 <instance part="D5" gate="G$1" x="-5.08" y="-209.55" rot="MR180"/>
 <instance part="Q1" gate="G$1" x="97.79" y="-207.01"/>
@@ -24601,6 +24602,7 @@ avoid a self-generated HW interrupt</text>
 <instance part="SUPPLY37" gate="GND" x="170.18" y="-228.6" rot="MR0"/>
 <instance part="+3V23" gate="G$1" x="149.86" y="-203.2"/>
 <instance part="TP1" gate="G$1" x="-50.8" y="68.58" rot="R180"/>
+<instance part="J1" gate="G$1" x="66.04" y="-193.04"/>
 </instances>
 <busses>
 </busses>
@@ -25031,8 +25033,12 @@ avoid a self-generated HW interrupt</text>
 <segment>
 <pinref part="+3V22" gate="G$1" pin="+3V3"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="113.03" y1="-212.09" x2="113.03" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="-212.09" x2="113.03" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="-193.04" x2="113.03" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="100.33" y1="-212.09" x2="113.03" y2="-212.09" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="-193.04" x2="113.03" y2="-193.04" width="0.1524" layer="91"/>
+<junction x="113.03" y="-193.04"/>
 </segment>
 <segment>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
@@ -25478,6 +25484,9 @@ avoid a self-generated HW interrupt</text>
 <wire x1="100.33" y1="-201.93" x2="54.61" y2="-201.93" width="0.1524" layer="91"/>
 <wire x1="54.61" y1="-201.93" x2="54.61" y2="-209.55" width="0.1524" layer="91"/>
 <junction x="54.61" y="-209.55"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-193.04" x2="31.75" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="-193.04" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSFET" class="0">
@@ -25507,14 +25516,13 @@ avoid a self-generated HW interrupt</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,73.66,-10.16,R7A,1,,,,"/>
+<approved hash="101,1,83.82,-10.16,R7A,2,,,,"/>
 <approved hash="104,1,142.24,83.82,U$1,VCC,+3V3,,,"/>
 <approved hash="104,1,142.24,43.18,U$1,GND1,GND,,,"/>
-<approved hash="104,1,-12.7,-10.16,J2,3.3V,+3V3,,,"/>
-<approved hash="104,1,-12.7,-12.7,J2,3.3V,+3V3,,,"/>
-<approved hash="104,1,-12.7,-7.62,J2,5V,+5V,,,"/>
-<approved hash="104,1,-12.7,-5.08,J2,5V,+5V,,,"/>
 <approved hash="104,1,109.22,-157.48,IC1,VCC,+3V3,,,"/>
 <approved hash="104,1,53.34,-119.38,X2,VDD,+3V3,,,"/>
+<approved hash="104,1,170.18,-205.74,IC3,VDD,+3V3,,,"/>
 <approved hash="106,1,27.94,68.58,ADC,,,,,"/>
 <approved hash="106,1,147.32,152.4,N$10,,,,,"/>
 <approved hash="113,1,181.61,73.3721,X1,,,,,"/>
@@ -25523,6 +25531,7 @@ avoid a self-generated HW interrupt</text>
 <approved hash="113,1,130.81,142.562,LED2,,,,,"/>
 <approved hash="113,1,130.81,132.402,LED3,,,,,"/>
 <approved hash="113,1,130.81,123.512,LED4,,,,,"/>
+<approved hash="113,1,-44.7252,63.5,R1,,,,,"/>
 <approved hash="113,1,235.733,-68.58,D1,,,,,"/>
 <approved hash="113,1,245.893,-68.58,D2,,,,,"/>
 <approved hash="113,1,131.085,-154.94,R6,,,,,"/>
@@ -25533,10 +25542,10 @@ avoid a self-generated HW interrupt</text>
 <approved hash="113,1,146.071,-121.92,Y2,,,,,"/>
 <approved hash="113,1,151.13,-112.798,C8,,,,,"/>
 <approved hash="113,1,151.13,-127.342,C10,,,,,"/>
-<approved hash="113,1,62.23,-158.518,C7,,,,,"/>
 <approved hash="113,1,144.78,-40.1574,IC2,,,,,"/>
 <approved hash="113,1,124.46,142.613,J4,,,,,"/>
 <approved hash="113,1,-45.3983,52.07,LED5,,,,,"/>
+<approved hash="113,1,-56.2017,52.07,LED6,,,,,"/>
 <approved hash="115,1,167.64,71.12,ANT_OUT,,,,,"/>
 </errors>
 </schematic>
