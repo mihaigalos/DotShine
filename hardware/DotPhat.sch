@@ -398,6 +398,15 @@ Source: RS Components</description>
 <text x="-8" y="2" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-8" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR-1">
@@ -474,6 +483,13 @@ Source: RS Components</description>
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -623,6 +639,37 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="A" pad="+"/>
 <connect gate="G$1" pin="C" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24402,6 +24449,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="IC3" library="silabs" deviceset="SI114*" device="" technology="5"/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
+<part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -24552,6 +24600,7 @@ avoid a self-generated HW interrupt</text>
 <instance part="IC3" gate="G$1" x="180.34" y="-215.9"/>
 <instance part="SUPPLY37" gate="GND" x="170.18" y="-228.6" rot="MR0"/>
 <instance part="+3V23" gate="G$1" x="149.86" y="-203.2"/>
+<instance part="TP1" gate="G$1" x="-50.8" y="68.58" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -25009,6 +25058,9 @@ avoid a self-generated HW interrupt</text>
 <pinref part="R1" gate="A" pin="1"/>
 <wire x1="-45.72" y1="68.58" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
 <label x="-45.72" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
+<wire x1="-50.8" y1="68.58" x2="-45.72" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-45.72" y="68.58"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
