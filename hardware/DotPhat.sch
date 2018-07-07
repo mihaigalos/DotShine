@@ -21444,71 +21444,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-0.1905" y="-0.127"/>
 </polygon>
 </package>
-<package name="SMT-JUMPER_2_NO_NO-SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SMT-JUMPER_3_1-NC_TRACE">
@@ -21539,16 +21474,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SMT-JUMPER_2_NO">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21610,56 +21535,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
-<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
-&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
-
-&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
-&lt;p&gt;SparkFun Product that uses the round pads:
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -24576,7 +24451,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
 <part name="J1" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
-<part name="JP5" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -24713,9 +24587,9 @@ avoid a self-generated HW interrupt</text>
 <instance part="D3" gate="G$1" x="-7.62" y="-214.63" rot="MR270"/>
 <instance part="D4" gate="G$1" x="8.89" y="-227.33" rot="MR90"/>
 <instance part="SUPPLY33" gate="GND" x="-7.62" y="-232.41" rot="MR0"/>
-<instance part="C11" gate="G$1" x="31.75" y="-224.79" rot="MR0"/>
-<instance part="SUPPLY35" gate="GND" x="31.75" y="-234.95" rot="MR0"/>
-<instance part="C13" gate="G$1" x="31.75" y="-214.63" rot="MR0"/>
+<instance part="C11" gate="G$1" x="31.75" y="-222.25" rot="MR0"/>
+<instance part="SUPPLY35" gate="GND" x="31.75" y="-232.41" rot="MR0"/>
+<instance part="C13" gate="G$1" x="46.99" y="-222.25" rot="MR0"/>
 <instance part="SUPPLY34" gate="GND" x="8.89" y="-232.41" rot="MR0"/>
 <instance part="+3V22" gate="G$1" x="113.03" y="-187.96" rot="MR0"/>
 <instance part="SUPPLY36" gate="GND" x="82.55" y="-232.41" rot="MR0"/>
@@ -24729,7 +24603,6 @@ avoid a self-generated HW interrupt</text>
 <instance part="+3V23" gate="G$1" x="149.86" y="-203.2"/>
 <instance part="TP1" gate="G$1" x="-50.8" y="68.58" rot="R180"/>
 <instance part="J1" gate="G$1" x="66.04" y="-193.04"/>
-<instance part="JP5" gate="G$1" x="43.18" y="-226.06" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -24897,6 +24770,14 @@ avoid a self-generated HW interrupt</text>
 <wire x1="-7.62" y1="-219.71" x2="-7.62" y2="-229.87" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="C11" gate="G$1" pin="-"/>
+<pinref part="SUPPLY35" gate="GND" pin="GND"/>
+<wire x1="31.75" y1="-227.33" x2="31.75" y2="-229.87" width="0.1524" layer="91"/>
+<junction x="31.75" y="-227.33"/>
+<pinref part="C13" gate="G$1" pin="-"/>
+<wire x1="31.75" y1="-227.33" x2="46.99" y2="-227.33" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
@@ -24913,15 +24794,6 @@ avoid a self-generated HW interrupt</text>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY35" gate="GND" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="-"/>
-<wire x1="31.75" y1="-232.41" x2="31.75" y2="-231.14" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
-<wire x1="31.75" y1="-231.14" x2="31.75" y2="-229.87" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-231.14" x2="31.75" y2="-231.14" width="0.1524" layer="91"/>
-<junction x="31.75" y="-231.14"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -25593,9 +25465,14 @@ avoid a self-generated HW interrupt</text>
 </net>
 <net name="CAPS_VCC" class="0">
 <segment>
+<pinref part="C13" gate="G$1" pin="+"/>
+<pinref part="C11" gate="G$1" pin="+"/>
+<wire x1="46.99" y1="-219.71" x2="31.75" y2="-219.71" width="0.1524" layer="91"/>
+<junction x="31.75" y="-219.71"/>
 <pinref part="U$4" gate="G$1" pin="P$3"/>
 <wire x1="59.69" y1="-209.55" x2="54.61" y2="-209.55" width="0.1524" layer="91"/>
 <wire x1="54.61" y1="-209.55" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="-209.55" x2="31.75" y2="-219.71" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-2.54" y1="-209.55" x2="8.89" y2="-209.55" width="0.1524" layer="91"/>
 <junction x="31.75" y="-209.55"/>
@@ -25610,8 +25487,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="-193.04" x2="31.75" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="-193.04" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="+"/>
-<wire x1="31.75" y1="-209.55" x2="31.75" y2="-212.09" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSFET" class="0">
@@ -25635,17 +25510,6 @@ avoid a self-generated HW interrupt</text>
 <pinref part="IC3" gate="G$1" pin="INT"/>
 <wire x1="170.18" y1="-220.98" x2="167.64" y2="-220.98" width="0.1524" layer="91"/>
 <label x="167.64" y="-220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="C11" gate="G$1" pin="+"/>
-<pinref part="C13" gate="G$1" pin="-"/>
-<wire x1="31.75" y1="-222.25" x2="31.75" y2="-220.98" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="31.75" y1="-220.98" x2="31.75" y2="-219.71" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-220.98" x2="31.75" y2="-220.98" width="0.1524" layer="91"/>
-<junction x="31.75" y="-220.98"/>
 </segment>
 </net>
 </nets>
