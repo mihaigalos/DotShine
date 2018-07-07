@@ -5624,6 +5624,7 @@ design rules under a new name.</description>
 <via x="4.092240625" y="21.282725" extent="1-16" drill="0.3"/>
 <via x="5.489240625" y="15.109725" extent="1-16" drill="0.3"/>
 <via x="5.743240625" y="24.828725" extent="1-16" drill="0.3"/>
+<via x="32.362240625" y="14.089725" extent="1-16" drill="0.3"/>
 <via x="1.967240625" y="7.861725" extent="1-16" drill="0.3"/>
 <via x="3.920240625" y="9.865725" extent="1-16" drill="0.3"/>
 <via x="2.927859375" y="53.956615625" extent="1-16" drill="0.3"/>
@@ -5643,6 +5644,7 @@ design rules under a new name.</description>
 <via x="14.073859375" y="48.023615625" extent="1-16" drill="0.3"/>
 <contactref element="C11" pad="-"/>
 <contactref element="JP5" pad="2"/>
+<wire x1="28.9" y1="13.2" x2="32.362240625" y2="14.089725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
