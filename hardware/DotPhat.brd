@@ -1703,7 +1703,7 @@
 <dimension x1="0" y1="-0.1" x2="0" y2="65" x3="-27.194003125" y3="32.45" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="65" x2="29.9" y2="65" x3="14.95" y3="77.731875" textsize="1.778" layer="48"/>
 <rectangle x1="24.601171875" y1="47.69916875" x2="29.353765625" y2="49.6102625" layer="21"/>
-<text x="23.965" y="49.31" size="0.8128" layer="21" rot="R180">Radio</text>
+<text x="23.577" y="49.329" size="0.8128" layer="21" rot="R180">Radio</text>
 <text x="19.505" y="47.455" size="0.6096" layer="21">Tx</text>
 <text x="19.53" y="46.045" size="0.6096" layer="21">Rx</text>
 <text x="24.8" y="56.145" size="0.8128" layer="21">RST</text>
