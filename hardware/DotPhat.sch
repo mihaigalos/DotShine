@@ -24277,6 +24277,8 @@ avoid a self-generated HW interrupt</text>
 -Magenta-</text>
 <text x="-48.26" y="38.1" size="1.27" layer="91">Radio Tx
 -Cyan-</text>
+<text x="30.48" y="-243.84" size="1.778" layer="91">1000uF .. 6V -&gt; 300uF .. 2V ; 600 .. 3.6V -&gt; buget: 600-300 = 300uF
+1500uF .. 4V -&gt; 750uF .. 2V ; 1350.. 3.6V-&gt; buget: 1350-750 = 600uF</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="63.5"/>
