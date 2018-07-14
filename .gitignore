@@ -1,1 +1,11 @@
 /hardware/*.b#*
+/hardware/*.s#*
+/hardware/*.G*
+/hardware/*.T*
+/hardware/*.dri
+/hardware/*.gpi
+/hardware/*.xln
+*.tar.gz
+*.job
+*.pro
+*.zip
