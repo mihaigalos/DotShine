@@ -1688,7 +1688,6 @@
 <rectangle x1="23.6474" y1="7.6454" x2="24.8158" y2="7.6708" layer="22" rot="R270"/>
 <text x="26.6446" y="13.5636" size="1.27" layer="22" rot="SMR0">Mihai Galos</text>
 <text x="8.730875" y="58.235671875" size="1.016" layer="21" rot="R90">On</text>
-<rectangle x1="25.05735625" y1="45.9359" x2="29.01975625" y2="47.3075" layer="1"/>
 <rectangle x1="25.0472" y1="45.94109375" x2="29.0096" y2="47.31269375" layer="29"/>
 <text x="10.01839375" y="8.028075" size="0.8128" layer="21" rot="R180">SDA</text>
 <text x="10.042053125" y="19.794415625" size="0.8128" layer="21" rot="R180">GND</text>
@@ -1702,7 +1701,6 @@
 <wire x1="29.172153125" y1="-0.00279375" x2="0.84099375" y2="0" width="0.001" layer="20"/>
 <dimension x1="0" y1="-0.1" x2="0" y2="65" x3="-27.194003125" y3="32.45" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="65" x2="29.9" y2="65" x3="14.95" y3="77.731875" textsize="1.778" layer="48"/>
-<rectangle x1="24.601171875" y1="47.69916875" x2="29.353765625" y2="49.6102625" layer="21"/>
 <text x="23.577" y="49.329" size="0.8128" layer="21" rot="R180">Radio</text>
 <text x="19.505" y="47.455" size="0.6096" layer="21">Tx</text>
 <text x="19.53" y="46.045" size="0.6096" layer="21">Rx</text>
@@ -1754,6 +1752,7 @@
 <wire x1="4.299" y1="32.564" x2="5.022" y2="32.564" width="0.1524" layer="21"/>
 <wire x1="4.655" y1="32.191" x2="4.655" y2="32.914" width="0.1524" layer="21"/>
 <hole x="15.195" y="55.388" drill="3"/>
+<rectangle x1="24.601" y1="45.796" x2="29.358" y2="49.617" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -6962,9 +6961,6 @@ design rules under a new name.</description>
 <signal name="N$32">
 <via x="28.7754125" y="43.11141875" extent="1-16" drill="0.5"/>
 </signal>
-<signal name="N$33">
-<via x="28.825703125" y="45.22368125" extent="1-16" drill="0.5"/>
-</signal>
 <signal name="N$35">
 <wire x1="25.93111875" y1="28.141165625" x2="25.908765625" y2="28.141165625" width="1" layer="1"/>
 </signal>
@@ -6991,8 +6987,6 @@ design rules under a new name.</description>
 <wire x1="19.5562875" y1="26.40121875" x2="19.567465625" y2="27.593546875" width="0.1524" layer="1"/>
 </signal>
 <signal name="ANT2">
-<wire x1="28.87320625" y1="45.19295" x2="28.87320625" y2="45.609253125" width="1" layer="1"/>
-<wire x1="28.87320625" y1="45.609253125" x2="28.292053125" y2="46.19040625" width="1" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="C5" pad="1"/>
