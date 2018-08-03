@@ -27,7 +27,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1755,24 +1755,24 @@
 <rectangle x1="24.601" y1="45.796" x2="29.358" y2="49.617" layer="21"/>
 <circle x="11.733" y="46.117" radius="0.146453125" width="0.1524" layer="21"/>
 <circle x="11.774" y="46.099" radius="0.055971875" width="0.1524" layer="21"/>
-<dimension x1="1.10123125" y1="64.999615625" x2="1.002" y2="3.956" x3="48.888878125" y3="34.40004375" textsize="1.778" layer="48"/>
+<dimension x1="1.10123125" y1="64.999615625" x2="0.902" y2="3.056" x3="48.83869375" y3="33.873946875" textsize="1.778" layer="48"/>
 <text x="54.062" y="5.915" size="1.778" layer="48" rot="R90">Making room for IXYS SLMD121H9L | 45mA @ 4.5V </text>
-<dimension x1="4.006565625" y1="4.311159375" x2="4.007" y2="6.178" x3="-2.718225" y3="5.246140625" textsize="1.778" layer="48"/>
+<dimension x1="4.006565625" y1="3.111159375" x2="4.007" y2="5.178" x3="-2.718221875" y3="4.145990625" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="0.82981875" x2="20.006" y2="0.839" x3="10.00730625" y3="-8.54715" textsize="1.778" layer="48"/>
-<rectangle x1="5.8" y1="4.3" x2="16.8" y2="6.2" layer="30"/>
+<rectangle x1="5.7" y1="3.2" x2="16.7" y2="5.1" layer="30"/>
 <polygon width="0.1524" layer="42">
-<vertex x="11.1" y="6.2"/>
-<vertex x="11.1" y="5.5"/>
-<vertex x="10.4" y="5.5"/>
-<vertex x="10.4" y="5.3"/>
-<vertex x="11.1" y="5.3"/>
-<vertex x="11.1" y="4.6"/>
-<vertex x="11.3" y="4.6"/>
-<vertex x="11.3" y="5.3"/>
-<vertex x="12" y="5.3"/>
-<vertex x="12" y="5.5"/>
-<vertex x="11.3" y="5.5"/>
-<vertex x="11.3" y="6.2"/>
+<vertex x="11" y="5"/>
+<vertex x="11" y="4.3"/>
+<vertex x="10.3" y="4.3"/>
+<vertex x="10.3" y="4.1"/>
+<vertex x="11" y="4.1"/>
+<vertex x="11" y="3.4"/>
+<vertex x="11.2" y="3.4"/>
+<vertex x="11.2" y="4.1"/>
+<vertex x="11.9" y="4.1"/>
+<vertex x="11.9" y="4.3"/>
+<vertex x="11.2" y="4.3"/>
+<vertex x="11.2" y="5"/>
 </polygon>
 </plain>
 <libraries>
@@ -6148,14 +6148,14 @@ design rules under a new name.</description>
 <wire x1="16.504" y1="9.722" x2="14.5544" y2="7.7724" width="0.1524" layer="16"/>
 <wire x1="14.5544" y1="7.7724" x2="6.4008" y2="7.7724" width="0.1524" layer="16"/>
 <polygon width="0.1524" layer="16" isolate="0.1" orphans="yes">
-<vertex x="5.8" y="4.3"/>
-<vertex x="16.8" y="4.3"/>
-<vertex x="16.8" y="6.2"/>
-<vertex x="11.6" y="6.2"/>
+<vertex x="5.8" y="3.1"/>
+<vertex x="16.8" y="3.1"/>
+<vertex x="16.8" y="5.2"/>
+<vertex x="11.6" y="5.2"/>
 <vertex x="11.6" y="7.8"/>
 <vertex x="10.7" y="7.8"/>
-<vertex x="10.7" y="6.2"/>
-<vertex x="5.8" y="6.2"/>
+<vertex x="10.6" y="5.2"/>
+<vertex x="5.7" y="5.2"/>
 </polygon>
 <wire x1="9.26490625" y1="59.71336875" x2="9.6006" y2="59.71" width="0" layer="19" extent="1-1"/>
 </signal>
