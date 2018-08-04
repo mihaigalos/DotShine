@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25036,9 +25036,9 @@ solar panel</text>
 <instance part="U$2" gate="G$1" x="66.04" y="-10.16" rot="R90"/>
 <instance part="SUPPLY32" gate="GND" x="57.15" y="2.54" rot="R180"/>
 <instance part="U$3" gate="G$1" x="57.15" y="-5.08" rot="R90"/>
-<instance part="D3" gate="G$1" x="-7.62" y="-214.63" rot="MR270"/>
+<instance part="D3" gate="G$1" x="-15.24" y="-214.63" rot="MR270"/>
 <instance part="D4" gate="G$1" x="8.89" y="-227.33" rot="MR90"/>
-<instance part="SUPPLY33" gate="GND" x="-7.62" y="-232.41" rot="MR0"/>
+<instance part="SUPPLY33" gate="GND" x="-15.24" y="-232.41" rot="MR0"/>
 <instance part="C11" gate="G$1" x="31.75" y="-222.25" rot="MR0"/>
 <instance part="SUPPLY35" gate="GND" x="31.75" y="-232.41" rot="MR0"/>
 <instance part="C13" gate="G$1" x="46.99" y="-222.25" rot="MR0"/>
@@ -25217,7 +25217,7 @@ solar panel</text>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
-<wire x1="-7.62" y1="-219.71" x2="-7.62" y2="-229.87" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-219.71" x2="-15.24" y2="-229.87" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="-"/>
@@ -25923,10 +25923,11 @@ solar panel</text>
 <junction x="-45.72" y="55.88"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SOLAR_OUT" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="-15.24" y1="-209.55" x2="-7.62" y2="-209.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT_MULTIPLE" class="0">
