@@ -24255,6 +24255,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="J1" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
+<part name="D7" library="diode" deviceset="DIODE-" device="SOD523" value="3.6V Zener"/>
 </parts>
 <sheets>
 <sheet>
@@ -24281,6 +24282,8 @@ avoid a self-generated HW interrupt</text>
 -Cyan-</text>
 <text x="30.48" y="-243.84" size="1.778" layer="91">1000uF .. 6V -&gt; 300uF .. 2V ; 600 .. 3.6V -&gt; buget: 600-300 = 300uF
 1500uF .. 4V -&gt; 750uF .. 2V ; 1350.. 3.6V-&gt; buget: 1350-750 = 600uF</text>
+<text x="22.86" y="-231.14" size="1.778" layer="91" rot="R90">Only if using large
+solar panel</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="63.5"/>
@@ -24406,6 +24409,7 @@ avoid a self-generated HW interrupt</text>
 <instance part="+3V3" gate="G$1" x="31.75" y="-199.39"/>
 <instance part="D6" gate="G$1" x="165.1" y="-35.56" rot="MR180"/>
 <instance part="J1" gate="G$1" x="165.1" y="-30.48"/>
+<instance part="D7" gate="G$1" x="16.51" y="-227.33" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -24586,6 +24590,9 @@ avoid a self-generated HW interrupt</text>
 <segment>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="16.51" y1="-229.87" x2="8.89" y2="-229.87" width="0.1524" layer="91"/>
+<junction x="8.89" y="-229.87"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
@@ -24831,8 +24838,9 @@ avoid a self-generated HW interrupt</text>
 <wire x1="31.75" y1="-209.55" x2="31.75" y2="-219.71" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-2.54" y1="-209.55" x2="8.89" y2="-209.55" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-209.55" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
+<wire x1="8.89" y1="-209.55" x2="16.51" y2="-209.55" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="16.51" y1="-209.55" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
 <wire x1="8.89" y1="-224.79" x2="8.89" y2="-209.55" width="0.1524" layer="91"/>
 <junction x="8.89" y="-209.55"/>
 <pinref part="C7" gate="G$1" pin="+"/>
@@ -24841,6 +24849,9 @@ avoid a self-generated HW interrupt</text>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="31.75" y1="-201.93" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
 <junction x="31.75" y="-209.55"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="16.51" y1="-224.79" x2="16.51" y2="-209.55" width="0.1524" layer="91"/>
+<junction x="16.51" y="-209.55"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -25293,6 +25304,14 @@ avoid a self-generated HW interrupt</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="-30.48" x2="162.56" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="162.56" y="-35.56"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<wire x1="12.7" y1="-204.47" x2="12.7" y2="-234.95" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="12.7" y1="-234.95" x2="24.13" y2="-234.95" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="24.13" y1="-234.95" x2="24.13" y2="-204.47" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="24.13" y1="-204.47" x2="12.7" y2="-204.47" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 </nets>
