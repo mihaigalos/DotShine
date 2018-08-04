@@ -13,7 +13,7 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
@@ -27,7 +27,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -236,7 +236,6 @@
 <text x="54.062" y="5.915" size="1.778" layer="48" rot="R90">Making room for IXYS SLMD121H9L | 45mA @ 4.5V </text>
 <dimension x1="4.006565625" y1="3.111159375" x2="4.007" y2="5.178" x3="-2.718221875" y3="4.145990625" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="0.82981875" x2="20.006" y2="0.839" x3="10.00730625" y3="-8.54715" textsize="1.778" layer="48"/>
-<rectangle x1="5.7" y1="3.2" x2="16.7" y2="5.1" layer="30"/>
 <polygon width="0.1524" layer="42">
 <vertex x="11" y="4.8"/>
 <vertex x="11" y="4.3"/>
@@ -1647,6 +1646,8 @@ Galos</text>
 <rectangle x1="26.6319" y1="11.2395" x2="27.8003" y2="11.2649" layer="22" rot="R180"/>
 <rectangle x1="24.0919" y1="11.2395" x2="26.1747" y2="11.2649" layer="22" rot="R180"/>
 <rectangle x1="22.4663" y1="11.2395" x2="23.6347" y2="11.2649" layer="22" rot="R180"/>
+<rectangle x1="5.6388" y1="3.0226" x2="16.8656" y2="5.2578" layer="30"/>
+<rectangle x1="10.414" y1="1.905" x2="11.7856" y2="3.0734" layer="30"/>
 </plain>
 <libraries>
 <library name="SparkFun">
