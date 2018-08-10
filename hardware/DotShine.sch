@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24803,7 +24803,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="LED1" library="led" deviceset="GM1WA55311A" device=""/>
 <part name="LOGO1" library="Spark" deviceset="OSHW-LOGO" device="S"/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="R7" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="4.7kΩ"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X6" device=""/>
@@ -24873,7 +24872,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="IC2" library="MCP1700" deviceset="MCP1700" device="TT"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="J4" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="LED5" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="LED6" library="SparkFun" deviceset="LED" device="0603"/>
@@ -24899,6 +24897,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="J1" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="D8" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="3.6V"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24945,7 +24944,6 @@ solar panel</text>
 <instance part="LED1" gate="G$1" x="-22.86" y="73.66"/>
 <instance part="LOGO1" gate="G$1" x="-22.86" y="104.14"/>
 <instance part="SUPPLY29" gate="GND" x="160.02" y="142.24" rot="R90"/>
-<instance part="+3V1" gate="G$1" x="115.57" y="142.24" rot="R90"/>
 <instance part="R7" gate="A" x="78.74" y="-10.16"/>
 <instance part="R7" gate="B" x="78.74" y="-15.24"/>
 <instance part="R7" gate="C" x="78.74" y="-20.32"/>
@@ -25027,7 +25025,6 @@ solar panel</text>
 <instance part="SUPPLY25" gate="GND" x="17.78" y="-119.38"/>
 <instance part="IC2" gate="G$1" x="144.78" y="-35.56"/>
 <instance part="C9" gate="G$1" x="134.62" y="-38.1"/>
-<instance part="J4" gate="G$1" x="124.46" y="142.24"/>
 <instance part="LED5" gate="G$1" x="-45.72" y="53.34"/>
 <instance part="SUPPLY28" gate="GND" x="-45.72" y="45.72" rot="MR0"/>
 <instance part="LED6" gate="G$1" x="-55.88" y="50.8" rot="R180"/>
@@ -25053,6 +25050,7 @@ solar panel</text>
 <instance part="D6" gate="G$1" x="165.1" y="-35.56" rot="MR180"/>
 <instance part="J1" gate="G$1" x="165.1" y="-30.48"/>
 <instance part="D8" gate="G$1" x="16.51" y="-227.33" rot="R90"/>
+<instance part="P+1" gate="1" x="114.3" y="142.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -25459,11 +25457,6 @@ solar panel</text>
 <wire x1="73.66" y1="-119.38" x2="73.66" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="1"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="121.92" y1="142.24" x2="118.11" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
 <wire x1="-60.96" y1="48.26" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
@@ -25738,6 +25731,11 @@ solar panel</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="134.62" y="-35.56"/>
 </segment>
+<segment>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="127" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -25905,12 +25903,6 @@ solar panel</text>
 <label x="243.84" y="5.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="ALERT"/>
 <wire x1="238.76" y1="5.08" x2="243.84" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="J4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$13" class="0">
