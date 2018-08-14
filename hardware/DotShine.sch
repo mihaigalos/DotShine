@@ -24185,7 +24185,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="R1" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV"/>
+<part name="R1" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="470Ω"/>
 <part name="U2" library="SparkFun" deviceset="TMP102" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
@@ -24250,8 +24250,8 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="C7" library="adafruit" deviceset="CPOL-US" device="CT7343" value="1500uF 4V"/>
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="J1" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="D4" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 </parts>
 <sheets>
 <sheet>
@@ -24259,7 +24259,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <wire x1="104.14" y1="96.52" x2="104.14" y2="15.24" width="0.1524" layer="95" style="longdash"/>
 <text x="53.34" y="12.7" size="3.81" layer="95">MCU</text>
 <text x="139.7" y="12.7" size="3.81" layer="95">Radio</text>
-<text x="-30.48" y="35.56" size="1.778" layer="91">Values @ 20mA.</text>
 <text x="-36.83" y="50.8" size="1.27" layer="91">Blue</text>
 <text x="-20.32" y="50.8" size="1.27" layer="91" rot="R90">Green</text>
 <text x="-10.922" y="50.8" size="1.27" layer="91">Red</text>
@@ -24315,7 +24314,7 @@ avoid a self-generated HW interrupt</text>
 <instance part="LED3" gate="G$1" x="129.54" y="132.08" rot="R90"/>
 <instance part="SUPPLY9" gate="GND" x="160.02" y="123.19" rot="R90"/>
 <instance part="LED4" gate="G$1" x="129.54" y="123.19" rot="R90"/>
-<instance part="P+3" gate="1" x="66.04" y="-48.26" rot="R90"/>
+<instance part="P+3" gate="1" x="50.8" y="-48.26" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="68.58" y="-60.96"/>
 <instance part="J3" gate="G$1" x="78.74" y="-50.8"/>
 <instance part="CN1" gate="G$1" x="81.28" y="-74.93"/>
@@ -24398,8 +24397,8 @@ avoid a self-generated HW interrupt</text>
 <instance part="C7" gate="G$1" x="67.31" y="-222.25" rot="MR0"/>
 <instance part="D6" gate="G$1" x="165.1" y="-35.56" rot="MR180"/>
 <instance part="J1" gate="G$1" x="165.1" y="-30.48"/>
-<instance part="P+1" gate="1" x="114.3" y="142.24" rot="R90"/>
 <instance part="P+5" gate="1" x="31.75" y="-205.74"/>
+<instance part="D4" gate="G$1" x="69.85" y="-48.26" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -25038,22 +25037,12 @@ avoid a self-generated HW interrupt</text>
 <wire x1="106.68" y1="118.11" x2="86.36" y2="118.11" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="-48.26" x2="68.58" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<pinref part="J3" gate="G$1" pin="VBUS"/>
-</segment>
-<segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="134.62" y1="-30.48" x2="134.62" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="-35.56" x2="137.16" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="IN"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="134.62" y="-35.56"/>
-</segment>
-<segment>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="127" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
@@ -25070,6 +25059,11 @@ avoid a self-generated HW interrupt</text>
 <wire x1="67.31" y1="-219.71" x2="67.31" y2="-209.55" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="-209.55" x2="46.99" y2="-209.55" width="0.1524" layer="91"/>
 <junction x="46.99" y="-209.55"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="67.31" y1="-48.26" x2="53.34" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -25275,6 +25269,18 @@ avoid a self-generated HW interrupt</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="-30.48" x2="162.56" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="162.56" y="-35.56"/>
+</segment>
+</net>
+<net name="USB_FOR_LED" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="VBUS"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="76.2" y1="-48.26" x2="72.39" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="127" y1="142.24" x2="123.19" y2="142.24" width="0.1524" layer="91"/>
+<label x="123.19" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
