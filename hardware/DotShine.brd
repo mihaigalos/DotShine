@@ -39,13 +39,13 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1645,6 +1645,11 @@ Galos</text>
 <rectangle x1="10.414" y1="1.905" x2="11.7856" y2="3.0734" layer="30"/>
 <circle x="0.7982" y="33.4878" radius="0.146453125" width="0.1524" layer="21"/>
 <circle x="0.8138" y="33.4952" radius="0.055971875" width="0.1524" layer="21"/>
+<wire x1="0.849" y1="34.875" x2="0.559" y2="34.875" width="0.1524" layer="21"/>
+<wire x1="0.559" y1="34.875" x2="0.559" y2="34.598" width="0.1524" layer="21"/>
+<wire x1="0.559" y1="34.598" x2="2.238" y2="34.598" width="0.1524" layer="21"/>
+<wire x1="2.238" y1="34.598" x2="2.238" y2="34.308" width="0.1524" layer="21"/>
+<wire x1="2.238" y1="34.308" x2="1.983" y2="34.308" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
