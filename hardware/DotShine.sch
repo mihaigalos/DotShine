@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24253,6 +24253,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="D4" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED7" library="SparkFun" deviceset="LED" device="0603"/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24405,6 +24406,7 @@ leakage current too high </text>
 <instance part="D4" gate="G$1" x="69.85" y="-48.26" rot="MR0"/>
 <instance part="+3V1" gate="G$1" x="162.56" y="152.4" rot="R270"/>
 <instance part="LED7" gate="G$1" x="132.08" y="152.4" rot="R270"/>
+<instance part="+3V3" gate="G$1" x="46.99" y="-205.74"/>
 </instances>
 <busses>
 </busses>
@@ -24828,6 +24830,16 @@ leakage current too high </text>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="157.48" y1="152.4" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="+"/>
+<pinref part="C13" gate="G$1" pin="+"/>
+<wire x1="31.75" y1="-219.71" x2="46.99" y2="-219.71" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="+"/>
+<wire x1="46.99" y1="-219.71" x2="67.31" y2="-219.71" width="0.1524" layer="91"/>
+<junction x="46.99" y="-219.71"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="46.99" y1="-208.28" x2="46.99" y2="-219.71" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADCENA" class="0">
 <segment>
@@ -25061,16 +25073,6 @@ leakage current too high </text>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="-2.54" y1="-209.55" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="-209.55" x2="31.75" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="+"/>
-<wire x1="31.75" y1="-209.55" x2="31.75" y2="-219.71" width="0.1524" layer="91"/>
-<junction x="31.75" y="-209.55"/>
-<pinref part="C13" gate="G$1" pin="+"/>
-<wire x1="46.99" y1="-219.71" x2="46.99" y2="-209.55" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="-209.55" x2="31.75" y2="-209.55" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="+"/>
-<wire x1="67.31" y1="-219.71" x2="67.31" y2="-209.55" width="0.1524" layer="91"/>
-<wire x1="67.31" y1="-209.55" x2="46.99" y2="-209.55" width="0.1524" layer="91"/>
-<junction x="46.99" y="-209.55"/>
 </segment>
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
