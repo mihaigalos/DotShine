@@ -3529,8 +3529,6 @@
 <rectangle x1="9.7663" y1="7.4803" x2="9.9695" y2="7.5057" layer="22" rot="R180"/>
 <rectangle x1="12.0523" y1="7.5057" x2="12.2555" y2="7.5311" layer="22" rot="R180"/>
 <rectangle x1="12.0523" y1="7.5311" x2="12.2555" y2="7.5565" layer="22" rot="R180"/>
-<text x="-6.9342" y="74.4728" size="1.778" layer="21">Investigate if exit Schottky from LDO still needed. 
-0.3V drop, redo on breadboard with LDO and no Diode.</text>
 </plain>
 <libraries>
 <library name="SparkFun">
