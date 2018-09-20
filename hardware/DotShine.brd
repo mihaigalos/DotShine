@@ -8479,7 +8479,7 @@ design rules under a new name.</description>
 <wire x1="3.302" y1="52.959" x2="3.302" y2="51.943" width="0.3048" layer="1"/>
 <wire x1="3.302" y1="51.943" x2="3.9624" y2="51.2826" width="0.3048" layer="1"/>
 <wire x1="3.9624" y1="51.2826" x2="5.5626" y2="51.2826" width="0.3048" layer="1"/>
-<wire x1="5.5626" y1="51.2826" x2="7.8774" y2="51.2826" width="0.1524" layer="1"/>
+<wire x1="5.5626" y1="51.2826" x2="7.8774" y2="51.2826" width="0.3048" layer="1"/>
 <wire x1="7.8774" y1="51.2826" x2="8.14" y2="51.02" width="0.1524" layer="1"/>
 <via x="3.1242" y="34.671" extent="1-16" drill="0.3"/>
 <wire x1="4.8006" y1="34.8488" x2="4.8006" y2="39.0906" width="0.3048" layer="16"/>
@@ -9035,8 +9035,8 @@ design rules under a new name.</description>
 <approved hash="19,1,d619babdfca53462"/>
 <approved hash="5,1,a7599d941cb08ca7"/>
 <approved hash="19,1,fccf867cdafefafa"/>
-<approved hash="19,1,7abce1a6c01aa937"/>
 <approved hash="19,1,5000421e4242505c"/>
+<approved hash="19,1,7abce1a6c01aa937"/>
 <approved hash="5,1,be9a0d9534be7c88"/>
 <approved hash="19,1,ae13ad0ec98a54f9"/>
 <approved hash="19,1,ce9ac6c231b8fb64"/>
