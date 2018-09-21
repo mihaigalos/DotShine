@@ -8466,7 +8466,6 @@ design rules under a new name.</description>
 <wire x1="8.685" y1="50.65" x2="8.51" y2="50.65" width="0.3048" layer="1"/>
 <wire x1="8.51" y1="50.65" x2="8.14" y2="51.02" width="0.3048" layer="1"/>
 <contactref element="D5" pad="C"/>
-<wire x1="4.296" y1="33.96" x2="4.296" y2="33.181" width="0.3048" layer="1"/>
 <contactref element="D4" pad="C"/>
 <wire x1="18.17235" y1="58.956671875" x2="15.116271875" y2="58.956671875" width="0.3048" layer="1"/>
 <wire x1="15.116271875" y1="58.956671875" x2="13.1318" y2="56.9468" width="0.3048" layer="1"/>
