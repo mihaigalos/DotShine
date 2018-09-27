@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24169,9 +24169,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="X3" library="con-jst" deviceset="?4B-ZR" device="S"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603"/>
-<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="LED3" library="SparkFun" deviceset="LED" device="0603"/>
-<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="LED4" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
@@ -24244,7 +24242,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="D5" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="IC3" library="silabs" deviceset="SI114*" device="" technology="5"/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
-<part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
 <part name="C7" library="adafruit" deviceset="CPOL-US" device="CT7343" value="1500uF 4V"/>
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
@@ -24256,6 +24253,8 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="J2" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="J4" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
+<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24318,19 +24317,17 @@ leakage current too high </text>
 <instance part="X3" gate="-3" x="111.76" y="120.65"/>
 <instance part="X3" gate="-4" x="111.76" y="118.11"/>
 <instance part="P+2" gate="1" x="83.82" y="118.11" rot="R90"/>
-<instance part="LED2" gate="G$1" x="129.54" y="142.24" rot="R90"/>
-<instance part="SUPPLY8" gate="GND" x="160.02" y="132.08" rot="R90"/>
-<instance part="LED3" gate="G$1" x="129.54" y="132.08" rot="R90"/>
-<instance part="SUPPLY9" gate="GND" x="160.02" y="123.19" rot="R90"/>
-<instance part="LED4" gate="G$1" x="129.54" y="123.19" rot="R90"/>
+<instance part="LED2" gate="G$1" x="137.16" y="142.24" rot="R90"/>
+<instance part="LED3" gate="G$1" x="139.7" y="132.08" rot="R270"/>
+<instance part="LED4" gate="G$1" x="137.16" y="119.38" rot="R90"/>
 <instance part="P+3" gate="1" x="50.8" y="-48.26" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="68.58" y="-60.96"/>
 <instance part="J3" gate="G$1" x="78.74" y="-50.8"/>
 <instance part="CN1" gate="G$1" x="81.28" y="-74.93"/>
 <instance part="SUPPLY11" gate="GND" x="68.58" y="-82.55"/>
 <instance part="+3V7" gate="G$1" x="66.04" y="-77.47" rot="R90"/>
-<instance part="R4" gate="A" x="152.4" y="132.08"/>
-<instance part="R4" gate="B" x="152.4" y="123.19"/>
+<instance part="R4" gate="A" x="123.19" y="132.08" rot="R180"/>
+<instance part="R4" gate="B" x="177.8" y="120.65"/>
 <instance part="R4" gate="C" x="152.4" y="152.4"/>
 <instance part="R4" gate="D" x="152.4" y="142.24"/>
 <instance part="SUPPLY27" gate="GND" x="144.78" y="-48.26" rot="MR0"/>
@@ -24400,7 +24397,6 @@ leakage current too high </text>
 <instance part="D5" gate="G$1" x="-5.08" y="-209.55" rot="MR180"/>
 <instance part="IC3" gate="G$1" x="180.34" y="-215.9"/>
 <instance part="SUPPLY37" gate="GND" x="170.18" y="-228.6" rot="MR0"/>
-<instance part="+3V23" gate="G$1" x="149.86" y="-203.2"/>
 <instance part="TP1" gate="G$1" x="-50.8" y="68.58" rot="R180"/>
 <instance part="C7" gate="G$1" x="67.31" y="-222.25" rot="MR0"/>
 <instance part="D6" gate="G$1" x="165.1" y="-35.56" rot="MR180"/>
@@ -24408,10 +24404,12 @@ leakage current too high </text>
 <instance part="P+5" gate="1" x="31.75" y="-205.74"/>
 <instance part="D4" gate="G$1" x="69.85" y="-48.26" rot="MR0"/>
 <instance part="+3V1" gate="G$1" x="162.56" y="152.4" rot="R270"/>
-<instance part="LED7" gate="G$1" x="132.08" y="152.4" rot="R270"/>
+<instance part="LED7" gate="G$1" x="139.7" y="152.4" rot="R270"/>
 <instance part="+3V3" gate="G$1" x="46.99" y="-205.74"/>
 <instance part="J2" gate="G$1" x="137.16" y="-154.94" rot="R90"/>
 <instance part="J4" gate="G$1" x="144.78" y="-220.98"/>
+<instance part="+3V17" gate="G$1" x="162.56" y="132.08" rot="R270"/>
+<instance part="SUPPLY1" gate="GND" x="162.56" y="119.38" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -24470,14 +24468,6 @@ leakage current too high </text>
 <segment>
 <pinref part="R4" gate="D" pin="2"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<pinref part="R4" gate="B" pin="2"/>
-</segment>
-<segment>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<pinref part="R4" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-1" pin="1"/>
@@ -24589,6 +24579,11 @@ leakage current too high </text>
 <pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="160.02" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -24648,7 +24643,7 @@ leakage current too high </text>
 </segment>
 <segment>
 <pinref part="LED7" gate="G$1" pin="C"/>
-<wire x1="127" y1="152.4" x2="123.19" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="152.4" x2="123.19" y2="152.4" width="0.1524" layer="91"/>
 <label x="123.19" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -24822,11 +24817,6 @@ leakage current too high </text>
 <wire x1="-60.96" y1="48.26" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="+3V23" gate="G$1" pin="+3V3"/>
-<wire x1="149.86" y1="-205.74" x2="170.18" y2="-205.74" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="167.64" y1="-30.48" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
@@ -24849,6 +24839,11 @@ leakage current too high </text>
 <junction x="46.99" y="-219.71"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="46.99" y1="-208.28" x2="46.99" y2="-219.71" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="160.02" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADCENA" class="0">
@@ -24991,19 +24986,16 @@ leakage current too high </text>
 <pinref part="R1" gate="C" pin="1"/>
 </segment>
 </net>
-<net name="OUTB" class="0">
-<segment>
-<label x="86.36" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="106.68" y1="123.19" x2="86.36" y2="123.19" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="123.19" x2="127" y2="123.19" width="0.1524" layer="91"/>
-<junction x="106.68" y="123.19"/>
-</segment>
+<net name="UV_ON" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
 <wire x1="76.2" y1="22.86" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
 <label x="78.74" y="22.86" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VDD"/>
+<wire x1="170.18" y1="-205.74" x2="167.64" y2="-205.74" width="0.1524" layer="91"/>
+<label x="167.64" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -25011,23 +25003,6 @@ leakage current too high </text>
 <pinref part="U1" gate="G$1" pin="ADC6"/>
 <wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 <label x="25.4" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUTA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
-<wire x1="76.2" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
-<label x="78.74" y="83.82" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="127" y1="132.08" x2="125.73" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="125.73" y1="132.08" x2="125.73" y2="120.65" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-3" pin="1"/>
-<wire x1="106.68" y1="120.65" x2="125.73" y2="120.65" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="120.65" x2="86.36" y2="120.65" width="0.1524" layer="91"/>
-<junction x="106.68" y="120.65"/>
-<label x="86.36" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -25044,11 +25019,21 @@ leakage current too high </text>
 <wire x1="81.28" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TXD_OUT" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CBLUE"/>
-<wire x1="-22.86" y1="68.58" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="68.58" x2="-22.86" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="R1" gate="B" pin="2"/>
+<wire x1="-22.86" y1="67.31" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="67.31" x2="-19.05" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="-19.05" y1="67.31" x2="-19.05" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-22.86" y="67.31"/>
+<label x="-19.05" y="38.1" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-2" pin="1"/>
+<wire x1="106.68" y1="123.19" x2="86.36" y2="123.19" width="0.1524" layer="91"/>
+<label x="86.36" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -25097,21 +25082,7 @@ leakage current too high </text>
 <segment>
 <pinref part="R4" gate="D" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="147.32" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R4" gate="A" pin="1"/>
-<wire x1="134.62" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R4" gate="B" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="147.32" y1="123.19" x2="134.62" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -25276,7 +25247,7 @@ leakage current too high </text>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="127" y1="142.24" x2="123.19" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="142.24" x2="123.19" y2="142.24" width="0.1524" layer="91"/>
 <label x="123.19" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -25284,7 +25255,7 @@ leakage current too high </text>
 <segment>
 <pinref part="LED7" gate="G$1" pin="A"/>
 <pinref part="R4" gate="C" pin="1"/>
-<wire x1="134.62" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -25324,6 +25295,34 @@ leakage current too high </text>
 <label x="78.74" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="OUTAB" class="0">
+<segment>
+<pinref part="X3" gate="-3" pin="1"/>
+<wire x1="106.68" y1="120.65" x2="86.36" y2="120.65" width="0.1524" layer="91"/>
+<label x="86.36" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R4" gate="A" pin="2"/>
+<wire x1="106.68" y1="120.65" x2="118.11" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="120.65" x2="118.11" y2="132.08" width="0.1524" layer="91"/>
+<junction x="106.68" y="120.65"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
+<wire x1="76.2" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<label x="78.74" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="R4" gate="A" pin="1"/>
+<wire x1="134.62" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="128.27" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="119.38" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
+<junction x="132.08" y="132.08"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -25336,17 +25335,14 @@ leakage current too high </text>
 <approved hash="104,1,53.34,-119.38,X2,VDD,+3V3,,,"/>
 <approved hash="104,1,170.18,-205.74,IC3,VDD,+3V3,,,"/>
 <approved hash="106,1,27.94,68.58,ADC,,,,,"/>
-<approved hash="106,1,147.32,152.4,N$10,,,,,"/>
+<approved hash="105,1,133.35,-144.78,N$12,,,,,"/>
 <approved hash="113,1,181.61,73.3721,X1,,,,,"/>
 <approved hash="113,1,86.3092,68.4245,Y1,,,,,"/>
 <approved hash="113,1,61.1971,120.781,JP1,,,,,"/>
 <approved hash="113,1,130.81,142.562,LED2,,,,,"/>
 <approved hash="113,1,130.81,132.402,LED3,,,,,"/>
 <approved hash="113,1,130.81,123.512,LED4,,,,,"/>
-<approved hash="113,1,-44.7252,63.5,R1,,,,,"/>
-<approved hash="113,1,235.733,-68.58,D1,,,,,"/>
-<approved hash="113,1,245.893,-68.58,D2,,,,,"/>
-<approved hash="113,1,131.085,-154.94,R6,,,,,"/>
+<approved hash="113,1,153.945,-152.4,R6,,,,,"/>
 <approved hash="113,1,140.738,-87.63,C2,,,,,"/>
 <approved hash="113,1,227.562,67.31,C4,,,,,"/>
 <approved hash="113,1,229.87,72.6217,C5,,,,,"/>
@@ -25355,9 +25351,12 @@ leakage current too high </text>
 <approved hash="113,1,151.13,-112.798,C8,,,,,"/>
 <approved hash="113,1,151.13,-127.342,C10,,,,,"/>
 <approved hash="113,1,144.78,-40.1574,IC2,,,,,"/>
-<approved hash="113,1,124.46,142.613,J4,,,,,"/>
 <approved hash="113,1,-45.3983,52.07,LED5,,,,,"/>
 <approved hash="113,1,-56.2017,52.07,LED6,,,,,"/>
+<approved hash="113,1,165.1,-30.1075,J1,,,,,"/>
+<approved hash="113,1,130.81,152.078,LED7,,,,,"/>
+<approved hash="113,1,136.787,-154.94,J2,,,,,"/>
+<approved hash="113,1,144.78,-220.607,J4,,,,,"/>
 <approved hash="115,1,167.64,71.12,ANT_OUT,,,,,"/>
 </errors>
 </schematic>
