@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -57,6 +58,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -11757,105 +11760,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <device name="L" package="OSHW-LOGO-L">
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-jst">
-<description>&lt;b&gt;J.S.T. Connectors&lt;/b&gt;&lt;p&gt;
-J.S.T Mfg Co.,Ltd.&lt;p&gt;
-http://www.jst-mfg.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="B4B-ZR">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt;  Top entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<wire x1="3.65" y1="-2.1" x2="-3.65" y2="-2.1" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-2.1" x2="-3.65" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.2" x2="3.65" y2="-2.1" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.2" x2="-3.65" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-3.25" y1="1" x2="-3.25" y2="1.15" width="0.2032" layer="21"/>
-<wire x1="-3.25" y1="1" x2="-2.75" y2="1" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="1" x2="-2.75" y2="1.15" width="0.2032" layer="21"/>
-<pad name="1" x="-2.25" y="0" drill="0.7" diameter="1.1"/>
-<pad name="2" x="-0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="3" x="0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="4" x="2.25" y="0" drill="0.7" diameter="1.1"/>
-<text x="-3.75" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.75" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="S4B-ZR">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; Side entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<wire x1="3.65" y1="-4.5" x2="-3.65" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-4.5" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.275" x2="3.65" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.275" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
-<wire x1="-3.55" y1="0.325" x2="3.55" y2="0.325" width="0.2032" layer="51"/>
-<pad name="1" x="-2.25" y="0" drill="0.7" diameter="1.1"/>
-<pad name="2" x="-0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="3" x="0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="4" x="2.25" y="0" drill="0.7" diameter="1.1"/>
-<text x="-3.75" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PM-VN">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.4064" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-4.064" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-<symbol name="PM-N">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.4064" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="?4B-ZR" prefix="X">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<gates>
-<gate name="-1" symbol="PM-VN" x="0" y="0" addlevel="always"/>
-<gate name="-2" symbol="PM-N" x="0" y="-2.54" addlevel="always"/>
-<gate name="-3" symbol="PM-N" x="0" y="-5.08" addlevel="always"/>
-<gate name="-4" symbol="PM-N" x="0" y="-7.62" addlevel="always"/>
-</gates>
-<devices>
-<device name="B" package="B4B-ZR">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="B4B-ZR(LF)(SN)" constant="no"/>
-<attribute name="OC_FARNELL" value="1830916" constant="no"/>
-<attribute name="OC_NEWARK" value="37K9960" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="S" package="S4B-ZR">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="S4B-ZR(LF)(SN)" constant="no"/>
-<attribute name="OC_FARNELL" value="9491830" constant="no"/>
-<attribute name="OC_NEWARK" value="38K8076" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -24265,6 +24169,69 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 </deviceset>
 </devicesets>
 </library>
+<library name="mihai_connectors_jst">
+<packages>
+<package name="S4B-ZR" urn="urn:adsk.eagle:footprint:7620/1" locally_modified="yes">
+<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; Side entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
+Source: http://www.jst.com .. eZH.pdf</description>
+<wire x1="9.65" y1="-4.5" x2="-3.65" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.65" y1="-4.5" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
+<wire x1="9.65" y1="1.275" x2="9.65" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="9.65" y1="1.275" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
+<wire x1="-3.55" y1="0.325" x2="9.55" y2="0.325" width="0.2032" layer="51"/>
+<pad name="1" x="-2.25" y="0" drill="0.7" diameter="1.1"/>
+<pad name="2" x="-0.75" y="0" drill="0.7" diameter="1.1"/>
+<pad name="3" x="0.75" y="0" drill="0.7" diameter="1.1"/>
+<pad name="4" x="2.25" y="0" drill="0.7" diameter="1.1"/>
+<text x="-3.75" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="5" x="3.75" y="0" drill="0.7" diameter="1.1"/>
+<pad name="6" x="5.25" y="0" drill="0.7" diameter="1.1"/>
+<pad name="7" x="6.75" y="0" drill="0.7" diameter="1.1"/>
+<pad name="8" x="8.25" y="0" drill="0.7" diameter="1.1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MICRO-JST-8">
+<pin name="1" x="-5.08" y="22.86" length="middle"/>
+<pin name="2" x="-5.08" y="20.32" length="middle"/>
+<pin name="3" x="-5.08" y="17.78" length="middle"/>
+<pin name="4" x="-5.08" y="15.24" length="middle"/>
+<pin name="5" x="-5.08" y="12.7" length="middle"/>
+<pin name="6" x="-5.08" y="10.16" length="middle"/>
+<pin name="7" x="-5.08" y="7.62" length="middle"/>
+<pin name="8" x="-5.08" y="5.08" length="middle"/>
+<wire x1="0" y1="25.4" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST-8">
+<gates>
+<gate name="G$1" symbol="MICRO-JST-8" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="S4B-ZR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -24296,9 +24263,6 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="JP1" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="X3" library="con-jst" deviceset="?4B-ZR" device="S"/>
-<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="LED3" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="LED4" library="SparkFun" deviceset="LED" device="0603"/>
@@ -24394,6 +24358,10 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 <part name="R8" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$4" library="mihai_connectors_jst" deviceset="JST-8" device=""/>
+<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24454,12 +24422,6 @@ leakage current too high </text>
 <instance part="JP1" gate="A" x="63.5" y="118.11"/>
 <instance part="+3V6" gate="G$1" x="43.18" y="115.57" rot="R90"/>
 <instance part="SUPPLY2" gate="GND" x="52.07" y="110.49"/>
-<instance part="SUPPLY7" gate="GND" x="97.79" y="125.73" rot="R270"/>
-<instance part="X3" gate="-1" x="111.76" y="125.73"/>
-<instance part="X3" gate="-2" x="111.76" y="123.19"/>
-<instance part="X3" gate="-3" x="111.76" y="120.65"/>
-<instance part="X3" gate="-4" x="111.76" y="118.11"/>
-<instance part="P+2" gate="1" x="83.82" y="118.11" rot="R90"/>
 <instance part="LED2" gate="G$1" x="137.16" y="142.24" rot="R90"/>
 <instance part="LED3" gate="G$1" x="139.7" y="132.08" rot="R270"/>
 <instance part="LED4" gate="G$1" x="137.16" y="119.38" rot="R90"/>
@@ -24564,6 +24526,10 @@ leakage current too high </text>
 <instance part="R8" gate="D" x="182.88" y="-322.58" rot="R90"/>
 <instance part="SUPPLY9" gate="GND" x="137.16" y="-330.2" rot="MR270"/>
 <instance part="+3V22" gate="G$1" x="76.2" y="-317.5"/>
+<instance part="U$4" gate="G$1" x="134.62" y="-412.75"/>
+<instance part="SUPPLY12" gate="GND" x="113.03" y="-397.51" rot="R270"/>
+<instance part="P+1" gate="1" x="116.84" y="-389.89" rot="R90"/>
+<instance part="+3V23" gate="G$1" x="111.76" y="-400.05" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -24622,11 +24588,6 @@ leakage current too high </text>
 <segment>
 <pinref part="R4" gate="D" pin="2"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="X3" gate="-1" pin="1"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="106.68" y1="125.73" x2="100.33" y2="125.73" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -24751,6 +24712,11 @@ leakage current too high </text>
 <wire x1="134.62" y1="-337.82" x2="134.62" y2="-330.2" width="0.1524" layer="91"/>
 <junction x="134.62" y="-330.2"/>
 </segment>
+<segment>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="129.54" y1="-397.51" x2="115.57" y2="-397.51" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -24792,6 +24758,11 @@ leakage current too high </text>
 <pinref part="U4" gate="G$1" pin="TXD_DD_SDA"/>
 <wire x1="124.46" y1="-342.9" x2="134.62" y2="-342.9" width="0.1524" layer="91"/>
 <label x="134.62" y="-342.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="7"/>
+<wire x1="129.54" y1="-405.13" x2="125.73" y2="-405.13" width="0.1524" layer="91"/>
+<label x="125.73" y="-405.13" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -25028,6 +24999,11 @@ leakage current too high </text>
 <pinref part="U4" gate="G$1" pin="VCC"/>
 <wire x1="76.2" y1="-320.04" x2="76.2" y2="-330.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="5"/>
+<pinref part="+3V23" gate="G$1" pin="+3V3"/>
+<wire x1="129.54" y1="-400.05" x2="114.3" y2="-400.05" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADCENA" class="0">
 <segment>
@@ -25144,6 +25120,11 @@ leakage current too high </text>
 <wire x1="124.46" y1="-340.36" x2="134.62" y2="-340.36" width="0.1524" layer="91"/>
 <label x="134.62" y="-340.36" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="6"/>
+<wire x1="129.54" y1="-402.59" x2="125.73" y2="-402.59" width="0.1524" layer="91"/>
+<label x="125.73" y="-402.59" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PUSH" class="0">
 <segment>
@@ -25219,9 +25200,9 @@ leakage current too high </text>
 <label x="-19.05" y="38.1" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="1"/>
-<wire x1="106.68" y1="123.19" x2="86.36" y2="123.19" width="0.1524" layer="91"/>
-<label x="86.36" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="129.54" y1="-394.97" x2="110.49" y2="-394.97" width="0.1524" layer="91"/>
+<label x="110.49" y="-394.97" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -25232,20 +25213,7 @@ leakage current too high </text>
 <pinref part="R1" gate="D" pin="2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="CRED"/>
-<wire x1="-27.94" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="68.58" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R1" gate="C" pin="2"/>
-</segment>
-</net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="X3" gate="-4" pin="1"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="106.68" y1="118.11" x2="86.36" y2="118.11" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="134.62" y1="-30.48" x2="134.62" y2="-35.56" width="0.1524" layer="91"/>
@@ -25264,6 +25232,11 @@ leakage current too high </text>
 <pinref part="D4" gate="G$1" pin="C"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="67.31" y1="-48.26" x2="53.34" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="129.54" y1="-389.89" x2="119.38" y2="-389.89" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -25485,18 +25458,19 @@ leakage current too high </text>
 </net>
 <net name="OUTAB" class="0">
 <segment>
-<pinref part="X3" gate="-3" pin="1"/>
-<wire x1="106.68" y1="120.65" x2="86.36" y2="120.65" width="0.1524" layer="91"/>
-<label x="86.36" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R4" gate="A" pin="2"/>
-<wire x1="106.68" y1="120.65" x2="118.11" y2="120.65" width="0.1524" layer="91"/>
-<wire x1="118.11" y1="120.65" x2="118.11" y2="132.08" width="0.1524" layer="91"/>
-<junction x="106.68" y="120.65"/>
+<wire x1="113.03" y1="132.08" x2="118.11" y2="132.08" width="0.1524" layer="91"/>
+<label x="113.03" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
 <wire x1="76.2" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 <label x="78.74" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="129.54" y1="-392.43" x2="110.49" y2="-392.43" width="0.1524" layer="91"/>
+<label x="110.49" y="-392.43" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -25593,6 +25567,23 @@ leakage current too high </text>
 <segment>
 <pinref part="U4" gate="G$1" pin="ALED"/>
 <wire x1="124.46" y1="-347.98" x2="134.62" y2="-347.98" width="0.1524" layer="91"/>
+<label x="134.62" y="-347.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RXD_IN" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="8"/>
+<wire x1="129.54" y1="-407.67" x2="125.73" y2="-407.67" width="0.1524" layer="91"/>
+<label x="125.73" y="-407.67" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="CRED"/>
+<wire x1="-27.94" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="68.58" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R1" gate="C" pin="2"/>
+<wire x1="-27.94" y1="68.58" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-27.94" y="68.58"/>
+<label x="-27.94" y="38.1" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -25637,6 +25628,11 @@ leakage current too high </text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
