@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24396,6 +24396,7 @@ leakage current too high </text>
 <text x="175.26" y="-332.74" size="1.27" layer="91" rot="R90">Green</text>
 <text x="184.658" y="-332.74" size="1.27" layer="91">Red</text>
 <text x="156.21" y="-332.74" size="1.27" layer="91">Blue</text>
+<text x="76.2" y="-307.34" size="1.27" layer="91">BT: After sleep issued, need PWRC assert low to wakup I2C :(</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="63.5"/>
@@ -24524,7 +24525,7 @@ leakage current too high </text>
 <instance part="R8" gate="B" x="172.72" y="-322.58" rot="R90"/>
 <instance part="R8" gate="C" x="238.76" y="-309.88" rot="R270"/>
 <instance part="R8" gate="D" x="182.88" y="-322.58" rot="R90"/>
-<instance part="SUPPLY9" gate="GND" x="137.16" y="-330.2" rot="MR270"/>
+<instance part="SUPPLY9" gate="GND" x="132.08" y="-330.2" rot="MR270"/>
 <instance part="+3V22" gate="G$1" x="76.2" y="-317.5"/>
 <instance part="U$4" gate="G$1" x="134.62" y="-412.75"/>
 <instance part="SUPPLY12" gate="GND" x="113.03" y="-397.51" rot="R270"/>
@@ -24706,11 +24707,11 @@ leakage current too high </text>
 <segment>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="-330.2" x2="124.46" y2="-330.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-330.2" x2="124.46" y2="-330.2" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="SELECT"/>
-<wire x1="124.46" y1="-337.82" x2="134.62" y2="-337.82" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-337.82" x2="134.62" y2="-330.2" width="0.1524" layer="91"/>
-<junction x="134.62" y="-330.2"/>
+<wire x1="124.46" y1="-337.82" x2="129.54" y2="-337.82" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-337.82" x2="129.54" y2="-330.2" width="0.1524" layer="91"/>
+<junction x="129.54" y="-330.2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
@@ -25584,6 +25585,11 @@ leakage current too high </text>
 <wire x1="-27.94" y1="68.58" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-27.94" y="68.58"/>
 <label x="-27.94" y="38.1" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PWRC"/>
+<wire x1="124.46" y1="-335.28" x2="134.62" y2="-335.28" width="0.1524" layer="91"/>
+<label x="134.62" y="-335.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
