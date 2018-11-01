@@ -24362,6 +24362,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
+<part name="J5" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 </parts>
 <sheets>
 <sheet>
@@ -24523,14 +24524,15 @@ leakage current too high </text>
 <instance part="SUPPLY8" gate="GND" x="238.76" y="-330.2" rot="MR0"/>
 <instance part="R8" gate="A" x="162.56" y="-322.58" rot="R90"/>
 <instance part="R8" gate="B" x="172.72" y="-322.58" rot="R90"/>
-<instance part="R8" gate="C" x="238.76" y="-309.88" rot="R270"/>
-<instance part="R8" gate="D" x="182.88" y="-322.58" rot="R90"/>
+<instance part="R8" gate="C" x="182.88" y="-322.58" rot="R90"/>
+<instance part="R8" gate="D" x="238.76" y="-309.88" rot="R270"/>
 <instance part="SUPPLY9" gate="GND" x="132.08" y="-330.2" rot="MR270"/>
 <instance part="+3V22" gate="G$1" x="76.2" y="-317.5"/>
 <instance part="U$4" gate="G$1" x="134.62" y="-412.75"/>
 <instance part="SUPPLY12" gate="GND" x="113.03" y="-397.51" rot="R270"/>
 <instance part="P+1" gate="1" x="116.84" y="-389.89" rot="R90"/>
 <instance part="+3V23" gate="G$1" x="111.76" y="-400.05" rot="R90"/>
+<instance part="J5" gate="G$1" x="241.3" y="-299.72"/>
 </instances>
 <busses>
 </busses>
@@ -24757,8 +24759,8 @@ leakage current too high </text>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="TXD_DD_SDA"/>
-<wire x1="124.46" y1="-342.9" x2="134.62" y2="-342.9" width="0.1524" layer="91"/>
-<label x="134.62" y="-342.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="-342.9" x2="132.08" y2="-342.9" width="0.1524" layer="91"/>
+<label x="132.08" y="-342.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="7"/>
@@ -25118,8 +25120,8 @@ leakage current too high </text>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="RXD_DC_SCL"/>
-<wire x1="124.46" y1="-340.36" x2="134.62" y2="-340.36" width="0.1524" layer="91"/>
-<label x="134.62" y="-340.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="-340.36" x2="132.08" y2="-340.36" width="0.1524" layer="91"/>
+<label x="132.08" y="-340.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="6"/>
@@ -25456,6 +25458,11 @@ leakage current too high </text>
 <wire x1="76.2" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 <label x="78.74" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="STAT"/>
+<wire x1="76.2" y1="-342.9" x2="68.58" y2="-342.9" width="0.1524" layer="91"/>
+<label x="68.58" y="-342.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="OUTAB" class="0">
 <segment>
@@ -25484,21 +25491,6 @@ leakage current too high </text>
 <wire x1="132.08" y1="132.08" x2="128.27" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="119.38" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <junction x="132.08" y="132.08"/>
-</segment>
-</net>
-<net name="BT_RED" class="0">
-<segment>
-<pinref part="R8" gate="D" pin="2"/>
-<pinref part="LED8" gate="G$1" pin="CGREEN"/>
-<wire x1="182.88" y1="-317.5" x2="182.88" y2="-314.96" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-314.96" x2="177.8" y2="-314.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="R8" gate="C" pin="2"/>
-<pinref part="LED9" gate="G$1" pin="A"/>
-<wire x1="238.76" y1="-314.96" x2="238.76" y2="-320.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BT_GREEN" class="0">
@@ -25530,7 +25522,7 @@ leakage current too high </text>
 <label x="68.58" y="-335.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R8" gate="D" pin="1"/>
+<pinref part="R8" gate="C" pin="1"/>
 <wire x1="182.88" y1="-327.66" x2="182.88" y2="-337.82" width="0.1524" layer="91"/>
 <label x="182.88" y="-337.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -25561,14 +25553,14 @@ leakage current too high </text>
 </net>
 <net name="ALED" class="0">
 <segment>
-<pinref part="R8" gate="C" pin="1"/>
-<wire x1="238.76" y1="-304.8" x2="238.76" y2="-302.26" width="0.1524" layer="91"/>
-<label x="238.76" y="-302.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="ALED"/>
+<wire x1="124.46" y1="-347.98" x2="132.08" y2="-347.98" width="0.1524" layer="91"/>
+<label x="132.08" y="-347.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="ALED"/>
-<wire x1="124.46" y1="-347.98" x2="134.62" y2="-347.98" width="0.1524" layer="91"/>
-<label x="134.62" y="-347.98" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="-299.72" x2="251.46" y2="-299.72" width="0.1524" layer="91"/>
+<label x="251.46" y="-299.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXD_IN" class="0">
@@ -25588,8 +25580,30 @@ leakage current too high </text>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="PWRC"/>
-<wire x1="124.46" y1="-335.28" x2="134.62" y2="-335.28" width="0.1524" layer="91"/>
-<label x="134.62" y="-335.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="-335.28" x2="132.08" y2="-335.28" width="0.1524" layer="91"/>
+<label x="132.08" y="-335.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R8" gate="D" pin="2"/>
+<pinref part="LED9" gate="G$1" pin="A"/>
+<wire x1="238.76" y1="-314.96" x2="238.76" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED8" gate="G$1" pin="CGREEN"/>
+<pinref part="R8" gate="C" pin="2"/>
+<wire x1="177.8" y1="-314.96" x2="182.88" y2="-314.96" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-314.96" x2="182.88" y2="-317.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="R8" gate="D" pin="1"/>
+<wire x1="238.76" y1="-299.72" x2="238.76" y2="-304.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
