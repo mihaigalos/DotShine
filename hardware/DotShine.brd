@@ -21,7 +21,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -7598,6 +7598,7 @@ design rules under a new name.</description>
 <element name="R8" library="SparkFun" package="0603-ARV" value="" x="5.3848" y="79.9592" rot="R90"/>
 <element name="U$4" library="mihai_connectors_jst" package="S4B-ZR" value="JST-8" x="5.1054" y="74.422" rot="R270"/>
 <element name="J5" library="solderjumper" package="2.MED" value="" x="7.5438" y="80.8228" rot="R270"/>
+<element name="J6" library="solderjumper" package="2.MED" value="" x="9.9314" y="58.6486" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -7881,7 +7882,7 @@ design rules under a new name.</description>
 <via x="8.8102" y="81.399" extent="1-16" drill="0.3"/>
 <via x="15.2872" y="64.0508" extent="1-16" drill="0.3"/>
 <via x="16.608" y="63.7968" extent="1-16" drill="0.3"/>
-<via x="10.1564" y="59.5804" extent="1-16" drill="0.3"/>
+<via x="10.2326" y="59.9868" extent="1-16" drill="0.3"/>
 <via x="18.4622" y="75.0744" extent="1-16" drill="0.3"/>
 <via x="21.18" y="74.5918" extent="1-16" drill="0.3"/>
 <via x="14.2458" y="78.6304" extent="1-16" drill="0.3"/>
@@ -9436,10 +9437,7 @@ design rules under a new name.</description>
 <via x="0.762" y="35.1536" extent="1-16" drill="0.3"/>
 <wire x1="0.762" y1="35.1536" x2="1.2334" y2="35.3202" width="0.845" layer="1"/>
 <wire x1="1.2334" y1="35.3202" x2="1.397" y2="35.244" width="0.845" layer="1"/>
-<contactref element="LED2" pad="A"/>
-<wire x1="8.343165625" y1="60.967659375" x2="8.343165625" y2="58.355765625" width="0.1524" layer="1"/>
-<wire x1="8.343165625" y1="58.355765625" x2="7.6708" y2="57.6834" width="0.1524" layer="1"/>
-<wire x1="7.6708" y1="57.6834" x2="7.6708" y2="56.4134" width="0.1524" layer="1"/>
+<wire x1="7.6708" y1="56.4134" x2="7.6708" y2="57.6834" width="0.1524" layer="1"/>
 <wire x1="7.6708" y1="56.4134" x2="7.3152" y2="56.134" width="0.1524" layer="1"/>
 <wire x1="7.3152" y1="56.134" x2="1.2954" y2="56.1086" width="0.1524" layer="1"/>
 <wire x1="1.2954" y1="56.1086" x2="0.8636" y2="55.626" width="0.1524" layer="1"/>
@@ -9458,6 +9456,9 @@ design rules under a new name.</description>
 <wire x1="3.6068" y1="4.318" x2="3.6068" y2="4.7752" width="0.8128" layer="1"/>
 <wire x1="4.006565625" y1="4.311159375" x2="3.999725" y2="4.318" width="0.1524" layer="1"/>
 <wire x1="3.999725" y1="4.318" x2="3.6068" y2="4.318" width="0.1524" layer="1"/>
+<contactref element="J6" pad="1"/>
+<wire x1="9.9314" y1="58.3692" x2="8.3566" y2="58.3692" width="0.1524" layer="1"/>
+<wire x1="8.3566" y1="58.3692" x2="7.6708" y2="57.6834" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="LED7" pad="A"/>
@@ -9847,6 +9848,14 @@ design rules under a new name.</description>
 <contactref element="R8" pad="4"/>
 <wire x1="7.5438" y1="81.1022" x2="6.0668" y2="81.1022" width="0.1524" layer="1"/>
 <wire x1="6.0668" y1="81.1022" x2="6.0098" y2="81.1592" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$34">
+<contactref element="LED2" pad="A"/>
+<contactref element="J6" pad="2"/>
+<wire x1="9.9314" y1="58.928" x2="9.1186" y2="58.928" width="0.1524" layer="1"/>
+<wire x1="9.1186" y1="58.928" x2="8.3312" y2="59.7154" width="0.1524" layer="1"/>
+<wire x1="8.3312" y1="59.7154" x2="8.3312" y2="60.95569375" width="0.1524" layer="1"/>
+<wire x1="8.3312" y1="60.95569375" x2="8.343165625" y2="60.967659375" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

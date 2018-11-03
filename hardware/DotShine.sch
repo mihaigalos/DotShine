@@ -24363,6 +24363,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="J5" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
+<part name="J6" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 </parts>
 <sheets>
 <sheet>
@@ -24533,6 +24534,7 @@ leakage current too high </text>
 <instance part="P+1" gate="1" x="116.84" y="-389.89" rot="R90"/>
 <instance part="+3V23" gate="G$1" x="111.76" y="-400.05" rot="R90"/>
 <instance part="J5" gate="G$1" x="241.3" y="-299.72"/>
+<instance part="J6" gate="G$1" x="129.54" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -25410,9 +25412,9 @@ leakage current too high </text>
 <wire x1="76.2" y1="-48.26" x2="72.39" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="134.62" y1="142.24" x2="123.19" y2="142.24" width="0.1524" layer="91"/>
-<label x="123.19" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+<label x="106.68" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -25604,6 +25606,13 @@ leakage current too high </text>
 <pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="R8" gate="D" pin="1"/>
 <wire x1="238.76" y1="-299.72" x2="238.76" y2="-304.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
