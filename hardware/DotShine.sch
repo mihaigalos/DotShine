@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24358,13 +24358,13 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="R8" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$4" library="mihai_connectors_jst" deviceset="JST-8" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="J5" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="J6" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$4" library="mihai_connectors_jst" deviceset="JST-8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24530,13 +24530,13 @@ leakage current too high </text>
 <instance part="R8" gate="D" x="238.76" y="-309.88" rot="R270"/>
 <instance part="SUPPLY9" gate="GND" x="132.08" y="-330.2" rot="MR270"/>
 <instance part="+3V22" gate="G$1" x="76.2" y="-317.5"/>
-<instance part="U$4" gate="G$1" x="134.62" y="-412.75"/>
 <instance part="SUPPLY12" gate="GND" x="113.03" y="-397.51" rot="R270"/>
 <instance part="P+1" gate="1" x="116.84" y="-389.89" rot="R90"/>
 <instance part="+3V23" gate="G$1" x="111.76" y="-400.05" rot="R90"/>
 <instance part="J5" gate="G$1" x="241.3" y="-299.72"/>
 <instance part="J6" gate="G$1" x="129.54" y="142.24"/>
 <instance part="+3V24" gate="G$1" x="66.04" y="-165.1" rot="R90"/>
+<instance part="U$4" gate="G$1" x="134.62" y="-412.75"/>
 </instances>
 <busses>
 </busses>
@@ -24767,9 +24767,9 @@ leakage current too high </text>
 <label x="132.08" y="-342.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="7"/>
 <wire x1="129.54" y1="-405.13" x2="125.73" y2="-405.13" width="0.1524" layer="91"/>
 <label x="125.73" y="-405.13" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -25007,9 +25007,9 @@ leakage current too high </text>
 <wire x1="76.2" y1="-320.04" x2="76.2" y2="-330.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="5"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 <wire x1="129.54" y1="-400.05" x2="114.3" y2="-400.05" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A1"/>
@@ -25133,9 +25133,9 @@ leakage current too high </text>
 <label x="132.08" y="-340.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="6"/>
 <wire x1="129.54" y1="-402.59" x2="125.73" y2="-402.59" width="0.1524" layer="91"/>
 <label x="125.73" y="-402.59" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="PUSH" class="0">
@@ -25574,9 +25574,9 @@ leakage current too high </text>
 </net>
 <net name="RXD_IN" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="8"/>
 <wire x1="129.54" y1="-407.67" x2="125.73" y2="-407.67" width="0.1524" layer="91"/>
 <label x="125.73" y="-407.67" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="CRED"/>

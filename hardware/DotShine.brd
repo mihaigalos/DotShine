@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -18,7 +19,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -7311,7 +7312,7 @@ Source: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1145-46-47.pdf
 </library>
 <library name="mihai_connectors_jst">
 <packages>
-<package name="S4B-ZR">
+<package name="S4B-ZR" urn="urn:adsk.eagle:footprint:7620/1" locally_modified="yes">
 <description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; Side entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
 Source: http://www.jst.com .. eZH.pdf</description>
 <wire x1="9.65" y1="-4.5" x2="-3.65" y2="-4.5" width="0.2032" layer="21"/>
@@ -7417,10 +7418,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -7591,9 +7596,9 @@ design rules under a new name.</description>
 <element name="LED8" library="led" package="GM1WA55311A" value="GM1WA55311A" x="1.651" y="80.1624"/>
 <element name="LED9" library="SparkFun" package="LED-0603" value="" x="3.5306" y="80.2132"/>
 <element name="R8" library="SparkFun" package="0603-ARV" value="" x="5.3848" y="79.9592" rot="R90"/>
-<element name="U$4" library="mihai_connectors_jst" package="S4B-ZR" value="JST-8" x="5.1054" y="74.422" rot="R270"/>
 <element name="J5" library="solderjumper" package="2.MED" value="" x="7.5438" y="80.8228" rot="R270"/>
 <element name="J6" library="solderjumper" package="2.MED" value="" x="9.9314" y="58.6486" rot="R90"/>
+<element name="U$4" library="mihai_connectors_jst" package="S4B-ZR" value="JST-8" x="5.08" y="74.3966" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -7866,7 +7871,6 @@ design rules under a new name.</description>
 <via x="9.369" y="65.778" extent="1-16" drill="0.3"/>
 <via x="8.2768" y="67.5052" extent="1-16" drill="0.3"/>
 <contactref element="U4" pad="21"/>
-<contactref element="U$4" pad="4"/>
 <via x="19.493" y="63.859" extent="1-16" drill="0.3"/>
 <via x="11.9598" y="72.9154" extent="1-16" drill="0.3"/>
 <via x="6.956" y="72.2804" extent="1-16" drill="0.3"/>
@@ -7901,7 +7905,9 @@ design rules under a new name.</description>
 <wire x1="17.4244" y1="50.93235625" x2="17.163059375" y2="50.671015625" width="0.1524" layer="1"/>
 <wire x1="18.351178125" y1="27.302334375" x2="18.351178125" y2="26.25081875" width="0.1524" layer="1"/>
 <wire x1="18.351178125" y1="26.25081875" x2="18.02588125" y2="25.925521875" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="4"/>
 <wire x1="3.537365625" y1="80.987265625" x2="3.5306" y2="80.9632" width="0" layer="19" extent="1-1"/>
+<wire x1="1.056446875" y1="62.1846875" x2="1.056446875" y2="60.2346875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
@@ -8012,11 +8018,12 @@ design rules under a new name.</description>
 <via x="2.3368" y="59.6646" extent="1-16" drill="0.3"/>
 <wire x1="2.3368" y1="59.6646" x2="4.787646875" y2="59.6646" width="0.1524" layer="1"/>
 <wire x1="4.787646875" y1="59.6646" x2="5.350509375" y2="60.2274625" width="0.1524" layer="1"/>
-<contactref element="U$4" pad="7"/>
 <wire x1="5.1054" y1="67.672" x2="4.2418" y2="66.8084" width="0.1524" layer="16"/>
 <wire x1="4.2418" y1="66.8084" x2="4.2418" y2="64.516" width="0.1524" layer="16"/>
 <wire x1="3.7338" y1="62.7634" x2="4.2418" y2="63.2714" width="0.1524" layer="16"/>
 <wire x1="4.2418" y1="63.2714" x2="4.2418" y2="64.516" width="0.1524" layer="16"/>
+<contactref element="U$4" pad="7"/>
+<wire x1="5.1054" y1="67.672" x2="5.08" y2="67.6466" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="RST">
 <contactref element="U1" pad="29"/>
@@ -8480,7 +8487,6 @@ design rules under a new name.</description>
 <wire x1="7.8232" y1="71.0438" x2="7.8232" y2="74.3458" width="0.1524" layer="1"/>
 <wire x1="7.8232" y1="74.3458" x2="7.7216" y2="74.4474" width="0.1524" layer="1"/>
 <wire x1="7.2644" y1="74.4474" x2="7.7216" y2="74.4474" width="0.1524" layer="1"/>
-<contactref element="U$4" pad="5"/>
 <wire x1="5.938" y1="75.7738" x2="7.2644" y2="74.4474" width="0.1524" layer="1"/>
 <wire x1="25.5" y1="62.5" x2="24.8302" y2="63.1698" width="0.1524" layer="1"/>
 <wire x1="24.8302" y1="63.1698" x2="21.96555" y2="63.1698" width="0.1524" layer="1"/>
@@ -8521,6 +8527,8 @@ design rules under a new name.</description>
 <wire x1="2.1082" y1="63.0936" x2="2.1082" y2="61.8236" width="0.1524" layer="1"/>
 <wire x1="2.1082" y1="61.8236" x2="1.8192875" y2="61.5346875" width="0.1524" layer="1"/>
 <wire x1="1.8192875" y1="61.5346875" x2="1.056446875" y2="61.5346875" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="5"/>
+<wire x1="5.1054" y1="70.672" x2="5.08" y2="70.6466" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADCENA">
 <contactref element="U1" pad="13"/>
@@ -8814,7 +8822,6 @@ design rules under a new name.</description>
 <wire x1="15.3416" y1="67.437" x2="14.5542" y2="67.437" width="0.1524" layer="1"/>
 <wire x1="14.5542" y1="67.437" x2="13.3604" y2="68.6308" width="0.1524" layer="1"/>
 <wire x1="13.3604" y1="68.6308" x2="11.4554" y2="68.6308" width="0.1524" layer="1"/>
-<contactref element="U$4" pad="6"/>
 <via x="8.2042" y="69.215" extent="1-16" drill="0.35"/>
 <wire x1="10.8712" y1="69.215" x2="11.4554" y2="68.6308" width="0.1524" layer="1"/>
 <wire x1="8.2042" y1="69.215" x2="8.7851125" y2="69.215" width="0.1524" layer="1"/>
@@ -8827,7 +8834,10 @@ design rules under a new name.</description>
 <wire x1="3.9" y1="60.4" x2="2.9718" y2="61.3282" width="0.1524" layer="1"/>
 <wire x1="2.9718" y1="61.3282" x2="2.9718" y2="68.326" width="0.1524" layer="1"/>
 <wire x1="2.9718" y1="68.326" x2="3.8178" y2="69.172" width="0.1524" layer="1"/>
-<wire x1="3.8178" y1="69.172" x2="5.1054" y2="69.172" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="6"/>
+<wire x1="3.8178" y1="69.172" x2="5.0546" y2="69.172" width="0.1524" layer="1"/>
+<wire x1="5.0546" y1="69.172" x2="5.08" y2="69.1466" width="0.1524" layer="1"/>
+<wire x1="5.08" y1="69.1466" x2="5.1054" y2="69.172" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="PUSH">
 <contactref element="U1" pad="1"/>
@@ -8987,7 +8997,6 @@ design rules under a new name.</description>
 <wire x1="27.3558" y1="62.484" x2="27.4828" y2="62.357" width="0.1524" layer="1"/>
 <wire x1="27.4828" y1="62.357" x2="27.4828" y2="61.6078" width="0.1524" layer="1"/>
 <wire x1="27.4828" y1="61.6078" x2="27.475" y2="61.6" width="0.1524" layer="1"/>
-<contactref element="U$4" pad="3"/>
 <wire x1="23.622" y1="59.8678" x2="21.7678" y2="61.722" width="0.1524" layer="1"/>
 <wire x1="21.7678" y1="61.722" x2="21.7678" y2="61.7474" width="0.1524" layer="1"/>
 <wire x1="21.7678" y1="61.7474" x2="21.7424" y2="61.722" width="0.1524" layer="1"/>
@@ -9012,6 +9021,8 @@ design rules under a new name.</description>
 <wire x1="6.9028" y1="66.89419375" x2="6.9028" y2="69.215" width="0.1524" layer="1"/>
 <wire x1="6.9028" y1="69.215" x2="6.9028" y2="71.51080625" width="0.1524" layer="1"/>
 <wire x1="6.9028" y1="71.51080625" x2="6.3742" y2="72.03940625" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="3"/>
+<wire x1="5.1054" y1="73.672" x2="5.08" y2="73.6466" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="LED1" pad="1"/>
@@ -9059,7 +9070,6 @@ design rules under a new name.</description>
 <wire x1="4.013" y1="33.96" x2="3.1242" y2="34.671" width="0.3048" layer="1"/>
 <wire x1="3.1242" y1="34.671" x2="2.3972" y2="33.944" width="0.3048" layer="1"/>
 <wire x1="2.3972" y1="33.944" x2="1.397" y2="33.944" width="0.3048" layer="1"/>
-<contactref element="U$4" pad="1"/>
 <via x="2.7432" y="60.579" extent="1-16" drill="0.35"/>
 <wire x1="2.7432" y1="54.9148" x2="2.7432" y2="58.84180625" width="0.3048" layer="16"/>
 <wire x1="3.1242" y1="54.5338" x2="3.9116" y2="54.5338" width="0.3048" layer="16"/>
@@ -9075,6 +9085,8 @@ design rules under a new name.</description>
 <wire x1="5.1054" y1="76.4572375" x2="5.1054" y2="76.672" width="0.3048" layer="1"/>
 <wire x1="3" y1="73.612" x2="3" y2="74.3518375" width="0.3048" layer="1"/>
 <wire x1="3" y1="74.3518375" x2="5.1054" y2="76.4572375" width="0.3048" layer="1"/>
+<contactref element="U$4" pad="1"/>
+<wire x1="5.1054" y1="76.672" x2="5.08" y2="76.6466" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R4" pad="4"/>
@@ -9604,7 +9616,6 @@ design rules under a new name.</description>
 <wire x1="23.025" y1="40.84" x2="22.4" y2="40.215" width="0.1524" layer="16"/>
 <wire x1="22.4" y1="40.215" x2="22.4" y2="40.2" width="0.1524" layer="16"/>
 <wire x1="25.061671875" y1="58.7248" x2="23.19299375" y2="60.593478125" width="0.1524" layer="16"/>
-<contactref element="U$4" pad="2"/>
 <wire x1="21.067521875" y1="60.593478125" x2="19.2786" y2="62.3824" width="0.1524" layer="16"/>
 <wire x1="19.2786" y1="62.3824" x2="17.76459375" y2="62.3824" width="0.1524" layer="16"/>
 <wire x1="17.76459375" y1="62.3824" x2="17.66539375" y2="62.2832" width="0.1524" layer="16"/>
@@ -9642,6 +9653,8 @@ design rules under a new name.</description>
 <wire x1="3.683" y1="73.8124" x2="3.7458" y2="73.8124" width="0.1524" layer="1"/>
 <wire x1="3.7458" y1="73.8124" x2="5.1054" y2="75.172" width="0.1524" layer="1"/>
 <wire x1="4.9784" y1="63.9064" x2="3.7084" y2="65.1764" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="2"/>
+<wire x1="5.1054" y1="75.172" x2="5.08" y2="75.1466" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="LED4" pad="A"/>
@@ -9761,7 +9774,6 @@ design rules under a new name.</description>
 <wire x1="11.37734375" y1="79.4004" x2="10.92014375" y2="79.8576" width="0.1524" layer="1"/>
 </signal>
 <signal name="RXD_IN">
-<contactref element="U$4" pad="8"/>
 <contactref element="LED1" pad="2"/>
 <wire x1="26.3652" y1="61.4172" x2="25.7556" y2="61.4172" width="0.1524" layer="1"/>
 <wire x1="26.5176" y1="61.5696" x2="26.3652" y2="61.4172" width="0.1524" layer="1"/>
@@ -9819,6 +9831,8 @@ design rules under a new name.</description>
 <wire x1="18.8976" y1="49.2044" x2="18.8976" y2="48.03179375" width="0.1524" layer="1"/>
 <wire x1="18.3798" y1="46.8982" x2="18.8468" y2="46.4312" width="0.1524" layer="1"/>
 <wire x1="18.3798" y1="47.51399375" x2="18.3798" y2="46.8982" width="0.1524" layer="1"/>
+<contactref element="U$4" pad="8"/>
+<wire x1="5.1054" y1="66.172" x2="5.08" y2="66.1466" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R8" pad="5"/>
@@ -9865,6 +9879,13 @@ design rules under a new name.</description>
 <wire x1="8.3312" y1="60.95569375" x2="8.343165625" y2="60.967659375" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="7,39,1fb91161c9400d9f"/>
 <approved hash="7,39,f3463387b3867347"/>
@@ -10086,6 +10107,11 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
