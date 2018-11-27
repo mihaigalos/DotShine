@@ -24364,6 +24364,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="J5" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="J6" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
+<part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24535,6 +24536,7 @@ leakage current too high </text>
 <instance part="+3V23" gate="G$1" x="111.76" y="-400.05" rot="R90"/>
 <instance part="J5" gate="G$1" x="241.3" y="-299.72"/>
 <instance part="J6" gate="G$1" x="129.54" y="142.24"/>
+<instance part="+3V24" gate="G$1" x="66.04" y="-165.1" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -25008,6 +25010,11 @@ leakage current too high </text>
 <pinref part="U$4" gate="G$1" pin="5"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 <wire x1="129.54" y1="-400.05" x2="114.3" y2="-400.05" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="+3V24" gate="G$1" pin="+3V3"/>
+<wire x1="81.28" y1="-165.1" x2="68.58" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADCENA" class="0">
