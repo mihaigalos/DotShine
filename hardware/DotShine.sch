@@ -29581,24 +29581,6 @@ leakage current too high </text>
 <pinref part="R1" gate="C" pin="1"/>
 </segment>
 </net>
-<net name="UV_ON" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
-<wire x1="76.2" y1="22.86" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
-<label x="78.74" y="22.86" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
-<wire x1="170.18" y1="-205.74" x2="167.64" y2="-205.74" width="0.1524" layer="91"/>
-<label x="167.64" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
-<wire x1="109.22" y1="-157.48" x2="111.76" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="-157.48" x2="111.76" y2="-142.24" width="0.1524" layer="91"/>
-<label x="111.76" y="-142.24" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="ADC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ADC6"/>
@@ -29974,6 +29956,24 @@ leakage current too high </text>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="J6" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PERIPHERY_ON" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="109.22" y1="-157.48" x2="111.76" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-157.48" x2="111.76" y2="-142.24" width="0.1524" layer="91"/>
+<label x="111.76" y="-142.24" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
+<wire x1="76.2" y1="22.86" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
+<label x="78.74" y="22.86" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VDD"/>
+<wire x1="170.18" y1="-205.74" x2="167.64" y2="-205.74" width="0.1524" layer="91"/>
+<label x="167.64" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
