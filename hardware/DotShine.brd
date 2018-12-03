@@ -3963,6 +3963,7 @@
 <rectangle x1="27.8511" y1="73.6219" x2="28.8925" y2="73.6473" layer="22" rot="R90"/>
 <rectangle x1="27.9654" y1="73.6092" x2="28.829" y2="73.6346" layer="22" rot="R90"/>
 <rectangle x1="28.3337" y1="73.3425" x2="28.3591" y2="73.3679" layer="22" rot="R90"/>
+<text x="-8.9408" y="86.8426" size="1.778" layer="21">Measure EEPROM Vdd from MCU pin: is current minimized?</text>
 </plain>
 <libraries>
 <library name="SparkFun">
