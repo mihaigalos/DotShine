@@ -28827,7 +28827,6 @@ http://dangerousprototypes.com</description>
 <part name="C13" library="adafruit" deviceset="CPOL-US" device="CT7343" value="1500uF 4V"/>
 <part name="D5" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
 <part name="IC3" library="silabs" deviceset="SI114*" device="" technology="5"/>
-<part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
 <part name="C7" library="adafruit" deviceset="CPOL-US" device="CT7343" value="1500uF 4V"/>
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD523" value="0.3V Schottky"/>
@@ -28857,6 +28856,7 @@ http://dangerousprototypes.com</description>
 <part name="BATT1" library="dp_devices" deviceset="BATTERY_2032" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
+<part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28993,7 +28993,6 @@ leakage current too high </text>
 <instance part="C13" gate="G$1" x="46.99" y="-222.25" rot="MR0"/>
 <instance part="D5" gate="G$1" x="-5.08" y="-209.55" rot="MR180"/>
 <instance part="IC3" gate="G$1" x="180.34" y="-215.9"/>
-<instance part="SUPPLY37" gate="GND" x="170.18" y="-228.6" rot="MR0"/>
 <instance part="TP1" gate="G$1" x="-50.8" y="68.58" rot="R180"/>
 <instance part="C7" gate="G$1" x="67.31" y="-222.25" rot="MR0"/>
 <instance part="D6" gate="G$1" x="165.1" y="-35.56" rot="MR180"/>
@@ -29023,6 +29022,7 @@ leakage current too high </text>
 <instance part="BATT1" gate="BATT" x="124.46" y="-436.88"/>
 <instance part="+3V9" gate="G$1" x="109.22" y="-425.45"/>
 <instance part="SUPPLY7" gate="GND" x="142.24" y="-439.42"/>
+<instance part="+3V18" gate="G$1" x="166.37" y="-198.12"/>
 </instances>
 <busses>
 </busses>
@@ -29182,10 +29182,6 @@ leakage current too high </text>
 <pinref part="C7" gate="G$1" pin="-"/>
 <wire x1="67.31" y1="-227.33" x2="46.99" y2="-227.33" width="0.1524" layer="91"/>
 <junction x="46.99" y="-227.33"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY37" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
@@ -29504,6 +29500,12 @@ leakage current too high </text>
 <wire x1="116.84" y1="-439.42" x2="109.22" y2="-439.42" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-439.42" x2="109.22" y2="-434.34" width="0.1524" layer="91"/>
 <junction x="109.22" y="-434.34"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VDD"/>
+<pinref part="+3V18" gate="G$1" pin="+3V3"/>
+<wire x1="170.18" y1="-205.74" x2="166.37" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="166.37" y1="-205.74" x2="166.37" y2="-200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADCENA" class="0">
@@ -30046,9 +30048,9 @@ leakage current too high </text>
 <label x="78.74" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
-<wire x1="170.18" y1="-205.74" x2="167.64" y2="-205.74" width="0.1524" layer="91"/>
-<label x="167.64" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<wire x1="170.18" y1="-226.06" x2="167.64" y2="-226.06" width="0.1524" layer="91"/>
+<label x="167.64" y="-226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
