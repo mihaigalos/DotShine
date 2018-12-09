@@ -28861,9 +28861,9 @@ http://dangerousprototypes.com</description>
 <sheets>
 <sheet>
 <plain>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="15.24" width="0.1524" layer="95" style="longdash"/>
-<text x="53.34" y="12.7" size="3.81" layer="95">MCU</text>
-<text x="180.34" y="12.7" size="3.81" layer="95">Radio</text>
+<wire x1="104.14" y1="96.52" x2="104.14" y2="7.62" width="0.1524" layer="95" style="longdash"/>
+<text x="31.75" y="16.51" size="3.81" layer="95">MCU</text>
+<text x="345.44" y="7.62" size="3.81" layer="95">Radio</text>
 <text x="26.67" y="-41.91" size="1.27" layer="91">Blue</text>
 <text x="43.18" y="-41.91" size="1.27" layer="91" rot="R90">Green</text>
 <text x="52.578" y="-41.91" size="1.27" layer="91">Red</text>
@@ -28892,41 +28892,43 @@ leakage current too high </text>
 <text x="299.72" y="-177.8" size="1.27" layer="91">Periphery_on = Low: EEPROM
 Periphery_on = High: UV Sensor</text>
 <text x="6.35" y="-139.7" size="3.81" layer="95">Leds</text>
-<wire x1="95.25" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="95" style="longdash"/>
-<wire x1="104.14" y1="-10.16" x2="104.14" y2="-142.24" width="0.1524" layer="95" style="longdash"/>
+<wire x1="97.79" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<wire x1="104.14" y1="-1.27" x2="104.14" y2="-149.86" width="0.1524" layer="95" style="longdash"/>
 <text x="175.26" y="-140.97" size="3.81" layer="95">Connectors</text>
-<wire x1="262.89" y1="2.54" x2="113.03" y2="2.54" width="0.1524" layer="95" style="longdash"/>
-<wire x1="271.78" y1="-3.81" x2="271.78" y2="-147.32" width="0.1524" layer="95" style="longdash"/>
+<wire x1="265.43" y1="2.54" x2="110.49" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<wire x1="271.78" y1="-1.27" x2="271.78" y2="-148.59" width="0.1524" layer="95" style="longdash"/>
 <text x="330.2" y="-73.66" size="3.81" layer="95">USB Periphery</text>
 <text x="340.36" y="-152.4" size="3.81" layer="95">Other Periphery</text>
-<wire x1="90.17" y1="-154.94" x2="-60.96" y2="-154.94" width="0.1524" layer="95" style="longdash"/>
-<wire x1="104.14" y1="-168.91" x2="104.14" y2="-300.99" width="0.1524" layer="95" style="longdash"/>
+<wire x1="95.25" y1="-154.94" x2="-60.96" y2="-154.94" width="0.1524" layer="95" style="longdash"/>
+<wire x1="104.14" y1="-161.29" x2="104.14" y2="-300.99" width="0.1524" layer="95" style="longdash"/>
 <text x="12.7" y="-299.72" size="3.81" layer="95">Power</text>
-<wire x1="261.62" y1="-154.94" x2="116.84" y2="-154.94" width="0.1524" layer="95" style="longdash"/>
+<wire x1="265.43" y1="-154.94" x2="110.49" y2="-154.94" width="0.1524" layer="95" style="longdash"/>
 <text x="170.18" y="-236.22" size="3.81" layer="95">Bluetooth</text>
-<wire x1="422.91" y1="-80.01" x2="287.02" y2="-80.01" width="0.1524" layer="95" style="longdash"/>
-<wire x1="262.89" y1="-246.38" x2="118.11" y2="-246.38" width="0.1524" layer="95" style="longdash"/>
-<wire x1="271.78" y1="-163.83" x2="271.78" y2="-295.91" width="0.1524" layer="95" style="longdash"/>
+<wire x1="422.91" y1="-80.01" x2="279.4" y2="-80.01" width="0.1524" layer="95" style="longdash"/>
+<wire x1="264.16" y1="-246.38" x2="111.76" y2="-246.38" width="0.1524" layer="95" style="longdash"/>
+<wire x1="271.78" y1="-158.75" x2="271.78" y2="-295.91" width="0.1524" layer="95" style="longdash"/>
 <text x="173.99" y="-300.99" size="3.81" layer="95">Pullups</text>
-<wire x1="427.99" y1="-228.6" x2="281.94" y2="-228.6" width="0.1524" layer="95" style="longdash"/>
+<wire x1="427.99" y1="-228.6" x2="278.13" y2="-228.6" width="0.1524" layer="95" style="longdash"/>
 <text x="360.68" y="-299.72" size="3.81" layer="95">Sensors</text>
+<wire x1="416.56" y1="2.54" x2="276.86" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<wire x1="271.78" y1="91.44" x2="271.78" y2="7.62" width="0.1524" layer="95" style="longdash"/>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="50.8" y="63.5"/>
-<instance part="SUPPLY3" gate="GND" x="25.4" y="40.64" rot="R270"/>
-<instance part="SUPPLY4" gate="GND" x="25.4" y="83.82" rot="R270"/>
-<instance part="SUPPLY6" gate="GND" x="139.7" y="38.1"/>
-<instance part="U$1" gate="G$1" x="142.24" y="60.96"/>
-<instance part="+3V4" gate="G$1" x="27.94" y="58.42"/>
-<instance part="+3V5" gate="G$1" x="142.24" y="86.36"/>
-<instance part="X1" gate="G$1" x="182.88" y="71.12" rot="R180"/>
-<instance part="SUPPLY5" gate="GND" x="187.96" y="73.66"/>
-<instance part="+3V2" gate="G$1" x="22.86" y="78.74" rot="R90"/>
-<instance part="Y1" gate="G$1" x="81.28" y="68.58" rot="R90"/>
-<instance part="SUPPLY30" gate="GND" x="88.9" y="66.04"/>
+<instance part="U1" gate="G$1" x="29.21" y="67.31"/>
+<instance part="SUPPLY3" gate="GND" x="3.81" y="44.45" rot="R270"/>
+<instance part="SUPPLY4" gate="GND" x="3.81" y="87.63" rot="R270"/>
+<instance part="SUPPLY6" gate="GND" x="304.8" y="33.02"/>
+<instance part="U$1" gate="G$1" x="307.34" y="55.88"/>
+<instance part="+3V4" gate="G$1" x="6.35" y="62.23"/>
+<instance part="+3V5" gate="G$1" x="307.34" y="81.28"/>
+<instance part="X1" gate="G$1" x="347.98" y="66.04" rot="R180"/>
+<instance part="SUPPLY5" gate="GND" x="353.06" y="68.58"/>
+<instance part="+3V2" gate="G$1" x="1.27" y="82.55" rot="R90"/>
+<instance part="Y1" gate="G$1" x="59.69" y="72.39" rot="R90"/>
+<instance part="SUPPLY30" gate="GND" x="67.31" y="69.85"/>
 <instance part="+3V14" gate="G$1" x="40.64" y="-11.43"/>
 <instance part="LED1" gate="G$1" x="40.64" y="-19.05"/>
-<instance part="LOGO1" gate="G$1" x="-22.86" y="104.14"/>
+<instance part="LOGO1" gate="G$1" x="187.96" y="69.85"/>
 <instance part="SUPPLY29" gate="GND" x="49.53" y="-88.9" rot="R90"/>
 <instance part="R7" gate="A" x="182.88" y="-271.78"/>
 <instance part="R7" gate="B" x="182.88" y="-276.86"/>
@@ -28981,18 +28983,18 @@ Periphery_on = High: UV Sensor</text>
 <instance part="C2" gate="G$1" x="467.36" y="-266.7" rot="R180"/>
 <instance part="+3V15" gate="G$1" x="467.36" y="-259.08"/>
 <instance part="SUPPLY20" gate="GND" x="467.36" y="-271.78"/>
-<instance part="C4" gate="G$1" x="226.06" y="68.58"/>
-<instance part="C5" gate="G$1" x="228.6" y="71.12" rot="R90"/>
-<instance part="C6" gate="G$1" x="233.68" y="68.58"/>
-<instance part="SUPPLY21" gate="GND" x="226.06" y="58.42"/>
-<instance part="Y2" gate="G$1" x="-10.16" y="57.15" rot="R90"/>
-<instance part="SUPPLY26" gate="GND" x="7.62" y="54.61"/>
-<instance part="C8" gate="G$1" x="-7.62" y="64.77" rot="R90"/>
-<instance part="C10" gate="G$1" x="-7.62" y="49.53" rot="R90"/>
+<instance part="C4" gate="G$1" x="391.16" y="63.5"/>
+<instance part="C5" gate="G$1" x="393.7" y="66.04" rot="R90"/>
+<instance part="C6" gate="G$1" x="398.78" y="63.5"/>
+<instance part="SUPPLY21" gate="GND" x="391.16" y="53.34"/>
+<instance part="Y2" gate="G$1" x="-31.75" y="60.96" rot="R90"/>
+<instance part="SUPPLY26" gate="GND" x="-13.97" y="58.42"/>
+<instance part="C8" gate="G$1" x="-29.21" y="68.58" rot="R90"/>
+<instance part="C10" gate="G$1" x="-29.21" y="53.34" rot="R90"/>
 <instance part="SPK1" gate="G$1" x="412.75" y="-113.03" rot="R90"/>
 <instance part="SUPPLY22" gate="GND" x="412.75" y="-123.19" rot="MR0"/>
-<instance part="JP3" gate="G$1" x="215.9" y="81.28"/>
-<instance part="JP4" gate="G$1" x="231.14" y="81.28"/>
+<instance part="JP3" gate="G$1" x="381" y="76.2"/>
+<instance part="JP4" gate="G$1" x="396.24" y="76.2"/>
 <instance part="+3V16" gate="G$1" x="347.98" y="-12.7"/>
 <instance part="X2" gate="G$1" x="411.48" y="-207.01"/>
 <instance part="+3V20" gate="G$1" x="447.04" y="-207.01"/>
@@ -29053,10 +29055,10 @@ Periphery_on = High: UV Sensor</text>
 <pinref part="U1" gate="G$1" pin="GND@1"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND@2"/>
-<wire x1="27.94" y1="43.18" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
-<junction x="27.94" y="40.64"/>
+<wire x1="6.35" y1="46.99" x2="6.35" y2="44.45" width="0.1524" layer="91"/>
+<junction x="6.35" y="44.45"/>
 <pinref part="U1" gate="G$1" pin="PAD"/>
-<wire x1="27.94" y1="30.48" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="34.29" x2="6.35" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -29064,20 +29066,20 @@ Periphery_on = High: UV Sensor</text>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="139.7" y1="43.18" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="38.1" x2="304.8" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
-<wire x1="142.24" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="139.7" y="43.18"/>
+<wire x1="307.34" y1="38.1" x2="304.8" y2="38.1" width="0.1524" layer="91"/>
+<junction x="304.8" y="38.1"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND@0"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="185.42" y1="76.2" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="71.12" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="GND@1"/>
-<wire x1="185.42" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="78.74" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
-<junction x="187.96" y="76.2"/>
+<wire x1="350.52" y1="73.66" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="73.66" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
+<junction x="353.06" y="71.12"/>
 </segment>
 <segment>
 <pinref part="Y1" gate="G$1" pin="2"/>
@@ -29140,17 +29142,17 @@ Periphery_on = High: UV Sensor</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="226.06" y1="63.5" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="58.42" x2="391.16" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="63.5" x2="226.06" y2="63.5" width="0.1524" layer="91"/>
-<junction x="226.06" y="63.5"/>
+<wire x1="398.78" y1="58.42" x2="391.16" y2="58.42" width="0.1524" layer="91"/>
+<junction x="391.16" y="58.42"/>
 </segment>
 <segment>
-<wire x1="-2.54" y1="64.77" x2="-2.54" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="68.58" x2="-24.13" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
-<wire x1="-2.54" y1="57.15" x2="-2.54" y2="49.53" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="57.15" x2="-2.54" y2="57.15" width="0.1524" layer="91"/>
-<junction x="-2.54" y="57.15"/>
+<wire x1="-24.13" y1="60.96" x2="-24.13" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="60.96" x2="-24.13" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-24.13" y="60.96"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 </segment>
@@ -29236,8 +29238,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA/PCINT12)"/>
-<wire x1="76.2" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="50.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="54.61" x2="57.15" y2="54.61" width="0.1524" layer="91"/>
+<label x="57.15" y="54.61" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="C" pin="1"/>
@@ -29283,8 +29285,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="RST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC6(PCINT14/!RESET)"/>
-<wire x1="76.2" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<label x="78.74" y="45.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="49.53" x2="57.15" y2="49.53" width="0.1524" layer="91"/>
+<label x="57.15" y="49.53" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="B" pin="1"/>
@@ -29313,8 +29315,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="LED" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
-<wire x1="76.2" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
-<label x="78.74" y="88.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="92.71" x2="57.15" y2="92.71" width="0.1524" layer="91"/>
+<label x="57.15" y="92.71" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="-36.83" x2="50.8" y2="-41.91" width="0.1524" layer="91"/>
@@ -29325,70 +29327,70 @@ Periphery_on = High: UV Sensor</text>
 <net name="RSEL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SEL"/>
-<wire x1="127" y1="71.12" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<label x="124.46" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="292.1" y1="66.04" x2="289.56" y2="66.04" width="0.1524" layer="91"/>
+<label x="289.56" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC3(ADC3/PCINT11)"/>
-<wire x1="76.2" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
-<label x="78.74" y="53.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="57.15" x2="57.15" y2="57.15" width="0.1524" layer="91"/>
+<label x="57.15" y="57.15" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RSCK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCK"/>
-<wire x1="127" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
-<label x="124.46" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="292.1" y1="63.5" x2="289.56" y2="63.5" width="0.1524" layer="91"/>
+<label x="289.56" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD4(XCK/T0/CINT20)"/>
-<wire x1="76.2" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
-<label x="78.74" y="30.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="34.29" x2="57.15" y2="34.29" width="0.1524" layer="91"/>
+<label x="57.15" y="34.29" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RSDI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDI"/>
-<wire x1="127" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
-<label x="124.46" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="292.1" y1="60.96" x2="289.56" y2="60.96" width="0.1524" layer="91"/>
+<label x="289.56" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD5(T1/OC0B/PCINT21)"/>
-<wire x1="76.2" y1="27.94" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
-<label x="78.74" y="27.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="31.75" x2="57.15" y2="31.75" width="0.1524" layer="91"/>
+<label x="57.15" y="31.75" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RSDO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDO"/>
-<wire x1="127" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<label x="124.46" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="292.1" y1="58.42" x2="289.56" y2="58.42" width="0.1524" layer="91"/>
+<label x="289.56" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD6(AIN0/PC0A/PCINT22)"/>
-<wire x1="76.2" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
-<label x="78.74" y="25.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="29.21" x2="57.15" y2="29.21" width="0.1524" layer="91"/>
+<label x="57.15" y="29.21" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RIRQ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO0/IRQ"/>
-<wire x1="127" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
-<label x="124.46" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="292.1" y1="50.8" x2="289.56" y2="50.8" width="0.1524" layer="91"/>
+<label x="289.56" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD2(INT0/PCINT18)"/>
-<wire x1="76.2" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
-<label x="78.74" y="35.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="39.37" x2="57.15" y2="39.37" width="0.1524" layer="91"/>
+<label x="57.15" y="39.37" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC@1"/>
 <pinref part="U1" gate="G$1" pin="VCC@2"/>
-<wire x1="27.94" y1="53.34" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="57.15" x2="6.35" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<junction x="27.94" y="55.88"/>
+<junction x="6.35" y="59.69"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -29397,7 +29399,7 @@ Periphery_on = High: UV Sensor</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="25.4" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="3.81" y1="82.55" x2="6.35" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -29532,8 +29534,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="ADCENA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A/PCINT1)"/>
-<wire x1="76.2" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<label x="78.74" y="86.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="90.17" x2="57.15" y2="90.17" width="0.1524" layer="91"/>
+<label x="57.15" y="90.17" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="SDA"/>
@@ -29558,8 +29560,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB3(MOSI/OC2/PCINT3)"/>
-<wire x1="76.2" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
-<label x="78.74" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="85.09" x2="57.15" y2="85.09" width="0.1524" layer="91"/>
+<label x="57.15" y="85.09" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
@@ -29570,8 +29572,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB4(MISO/PCINT4)"/>
-<wire x1="76.2" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<label x="78.74" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="82.55" x2="57.15" y2="82.55" width="0.1524" layer="91"/>
+<label x="57.15" y="82.55" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
@@ -29582,8 +29584,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="TXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1(TXD/PCINT17)"/>
-<wire x1="76.2" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
-<label x="78.74" y="38.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="41.91" x2="57.15" y2="41.91" width="0.1524" layer="91"/>
+<label x="57.15" y="41.91" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="-36.83" x2="40.64" y2="-41.91" width="0.1524" layer="91"/>
@@ -29594,8 +29596,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="SCK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB5(SCK/PCINT5)"/>
-<wire x1="76.2" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
-<label x="78.74" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="80.01" x2="57.15" y2="80.01" width="0.1524" layer="91"/>
+<label x="57.15" y="80.01" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
@@ -29606,8 +29608,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL/PCINT13)"/>
-<wire x1="76.2" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="52.07" x2="57.15" y2="52.07" width="0.1524" layer="91"/>
+<label x="57.15" y="52.07" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="D" pin="1"/>
@@ -29653,8 +29655,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="PUSH" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD3(INT1/OC2B/PCINT19)"/>
-<wire x1="76.2" y1="33.02" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
-<label x="78.74" y="33.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="36.83" x2="57.15" y2="36.83" width="0.1524" layer="91"/>
+<label x="57.15" y="36.83" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="161.29" y1="-271.78" x2="160.02" y2="-271.78" width="0.1524" layer="91"/>
@@ -29670,8 +29672,8 @@ Periphery_on = High: UV Sensor</text>
 <net name="RXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD0(RXD/PCINT16)"/>
-<wire x1="76.2" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
-<label x="78.74" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="44.45" x2="57.15" y2="44.45" width="0.1524" layer="91"/>
+<label x="57.15" y="44.45" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="-36.83" x2="30.48" y2="-41.91" width="0.1524" layer="91"/>
@@ -29682,22 +29684,22 @@ Periphery_on = High: UV Sensor</text>
 <net name="ADC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ADC6"/>
-<wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<label x="25.4" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="6.35" y1="72.39" x2="3.81" y2="72.39" width="0.1524" layer="91"/>
+<label x="3.81" y="72.39" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB6(XTAL1/TOSC1/PCINT6)"/>
 <pinref part="Y1" gate="G$1" pin="3"/>
-<wire x1="81.28" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="74.93" x2="54.61" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2/PCINT7)"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="69.85" x2="54.61" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXD_OUT" class="0">
@@ -29809,15 +29811,15 @@ Periphery_on = High: UV Sensor</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1PCINT9)"/>
-<wire x1="76.2" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<label x="78.74" y="58.42" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="62.23" x2="57.15" y2="62.23" width="0.1524" layer="91"/>
+<label x="57.15" y="62.23" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2PCINT10)"/>
-<wire x1="76.2" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<label x="78.74" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="59.69" x2="57.15" y2="59.69" width="0.1524" layer="91"/>
+<label x="57.15" y="59.69" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -29829,44 +29831,44 @@ Periphery_on = High: UV Sensor</text>
 <segment>
 <pinref part="X1" gate="G$1" pin="SIGNAL"/>
 <pinref part="U$1" gate="G$1" pin="ANT"/>
-<wire x1="177.8" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="66.04" x2="322.58" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="81.28" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
-<label x="208.28" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="375.92" y1="76.2" x2="373.38" y2="76.2" width="0.1524" layer="91"/>
+<label x="373.38" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ANT" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="71.12" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
-<junction x="233.68" y="71.12"/>
-<label x="241.3" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="398.78" y1="66.04" x2="401.32" y2="66.04" width="0.1524" layer="91"/>
+<junction x="398.78" y="66.04"/>
+<label x="406.4" y="66.04" size="1.27" layer="95" xref="yes"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="71.12" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="81.28" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
-<junction x="236.22" y="71.12"/>
+<wire x1="401.32" y1="66.04" x2="406.4" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="76.2" x2="401.32" y2="66.04" width="0.1524" layer="91"/>
+<junction x="401.32" y="66.04"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
 <segment>
 <pinref part="Y2" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="64.77" x2="-10.16" y2="59.69" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="59.69" x2="-17.78" y2="59.69" width="0.1524" layer="91"/>
-<junction x="-10.16" y="59.69"/>
-<label x="-17.78" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-31.75" y1="68.58" x2="-31.75" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="63.5" x2="-39.37" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-31.75" y="63.5"/>
+<label x="-39.37" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
 <segment>
 <pinref part="Y2" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="54.61" x2="-10.16" y2="49.53" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="54.61" x2="-17.78" y2="54.61" width="0.1524" layer="91"/>
-<junction x="-10.16" y="54.61"/>
-<label x="-17.78" y="54.61" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-31.75" y1="58.42" x2="-31.75" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="58.42" x2="-39.37" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-31.75" y="58.42"/>
+<label x="-39.37" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -29875,11 +29877,11 @@ Periphery_on = High: UV Sensor</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="81.28" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="81.28" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<junction x="226.06" y="71.12"/>
+<wire x1="386.08" y1="76.2" x2="391.16" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="76.2" x2="391.16" y2="66.04" width="0.1524" layer="91"/>
+<junction x="391.16" y="66.04"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<junction x="226.06" y="81.28"/>
+<junction x="391.16" y="76.2"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -29964,8 +29966,8 @@ Periphery_on = High: UV Sensor</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0/PCINT8)"/>
-<wire x1="76.2" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="78.74" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="64.77" x2="57.15" y2="64.77" width="0.1524" layer="91"/>
+<label x="57.15" y="64.77" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="STAT"/>
@@ -29981,8 +29983,8 @@ Periphery_on = High: UV Sensor</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
-<wire x1="76.2" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
-<label x="78.74" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="87.63" x2="57.15" y2="87.63" width="0.1524" layer="91"/>
+<label x="57.15" y="87.63" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="-46.99" x2="209.55" y2="-46.99" width="0.1524" layer="91"/>
@@ -30065,8 +30067,8 @@ Periphery_on = High: UV Sensor</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
-<wire x1="76.2" y1="22.86" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
-<label x="78.74" y="22.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="54.61" y1="26.67" x2="57.15" y2="26.67" width="0.1524" layer="91"/>
+<label x="57.15" y="26.67" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
