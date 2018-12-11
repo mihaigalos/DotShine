@@ -170,7 +170,7 @@
 <circle x="25.6" y="63.4" radius="0.14141875" width="0.254" layer="21"/>
 <text x="13.823125" y="57.56348125" size="0.8128" layer="21" rot="R90">OutA</text>
 <text x="15.050196875" y="57.556834375" size="0.8128" layer="21" rot="R90">OutB</text>
-<text x="8.908675" y="57.626071875" size="0.8128" layer="21" rot="R90">PWR</text>
+<text x="8.984875" y="57.930871875" size="0.8128" layer="21" rot="R90">PWR</text>
 <text x="10.01839375" y="8.028075" size="0.8128" layer="21" rot="R180">SDA</text>
 <text x="10.042053125" y="19.794415625" size="0.8128" layer="21" rot="R180">GND</text>
 <wire x1="0.0508" y1="109.040425" x2="0" y2="0.82981875" width="0" layer="20"/>
