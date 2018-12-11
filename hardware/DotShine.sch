@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28857,6 +28857,7 @@ http://dangerousprototypes.com</description>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
+<part name="D7" library="SparkFun" deviceset="SOLAR-IXYS" device="-" value="Solar Cell 4V"/>
 </parts>
 <sheets>
 <sheet>
@@ -29046,6 +29047,7 @@ Periphery_on = High: UV Sensor</text>
 <instance part="+3V9" gate="G$1" x="-12.7" y="-209.55"/>
 <instance part="SUPPLY7" gate="GND" x="20.32" y="-223.52"/>
 <instance part="+3V18" gate="G$1" x="334.01" y="-240.03"/>
+<instance part="D7" gate="G$1" x="-35.56" y="-251.46" rot="MR270"/>
 </instances>
 <busses>
 </busses>
@@ -29194,6 +29196,9 @@ Periphery_on = High: UV Sensor</text>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <wire x1="-25.4" y1="-256.54" x2="-25.4" y2="-266.7" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="-35.56" y1="-256.54" x2="-25.4" y2="-256.54" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-256.54"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="-"/>
@@ -29899,6 +29904,9 @@ Periphery_on = High: UV Sensor</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="-25.4" y1="-246.38" x2="-17.78" y2="-246.38" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="-25.4" y1="-246.38" x2="-35.56" y2="-246.38" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-246.38"/>
 </segment>
 </net>
 <net name="N$25" class="0">
