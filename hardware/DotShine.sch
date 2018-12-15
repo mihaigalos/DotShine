@@ -28858,6 +28858,8 @@ http://dangerousprototypes.com</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="D7" library="SparkFun" deviceset="SOLAR-IXYS" device="-" value="Solar Cell 4V"/>
+<part name="J7" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -29044,10 +29046,12 @@ Periphery_on = High: UV Sensor</text>
 <instance part="U$4" gate="G$1" x="233.68" y="-67.31"/>
 <instance part="R8" gate="G$1" x="223.52" y="-194.31" rot="R90"/>
 <instance part="BATT1" gate="BATT" x="2.54" y="-220.98"/>
-<instance part="+3V9" gate="G$1" x="-12.7" y="-209.55"/>
+<instance part="+3V9" gate="G$1" x="-27.94" y="-207.01"/>
 <instance part="SUPPLY7" gate="GND" x="20.32" y="-223.52"/>
 <instance part="+3V18" gate="G$1" x="334.01" y="-240.03"/>
 <instance part="D7" gate="G$1" x="-35.56" y="-251.46" rot="MR270"/>
+<instance part="J7" gate="G$1" x="-21.59" y="-220.98" rot="R270"/>
+<instance part="R9" gate="G$1" x="-27.94" y="-219.71" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -29520,20 +29524,19 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="331.47" y1="-213.36" x2="318.77" y2="-213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BATT1" gate="BATT" pin="V1"/>
-<wire x1="-5.08" y1="-218.44" x2="-12.7" y2="-218.44" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-218.44" x2="-12.7" y2="-212.09" width="0.1524" layer="91"/>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<pinref part="BATT1" gate="BATT" pin="V2"/>
-<wire x1="-5.08" y1="-223.52" x2="-12.7" y2="-223.52" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-223.52" x2="-12.7" y2="-218.44" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-218.44"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="G$1" pin="VDD"/>
 <pinref part="+3V18" gate="G$1" pin="+3V3"/>
 <wire x1="337.82" y1="-247.65" x2="334.01" y2="-247.65" width="0.1524" layer="91"/>
 <wire x1="334.01" y1="-247.65" x2="334.01" y2="-242.57" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-209.55" x2="-27.94" y2="-214.63" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="-214.63" x2="-21.59" y2="-214.63" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="-214.63" x2="-21.59" y2="-218.44" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-214.63"/>
 </segment>
 </net>
 <net name="ADCENA" class="0">
@@ -30095,41 +30098,29 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="295.91" y1="-173.99" x2="295.91" y2="-177.8" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="J7" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-224.79" x2="-21.59" y2="-224.79" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="-224.79" x2="-21.59" y2="-223.52" width="0.1524" layer="91"/>
+<pinref part="BATT1" gate="BATT" pin="V2"/>
+<wire x1="-5.08" y1="-223.52" x2="-7.62" y2="-223.52" width="0.1524" layer="91"/>
+<junction x="-21.59" y="-223.52"/>
+<pinref part="BATT1" gate="BATT" pin="V1"/>
+<wire x1="-7.62" y1="-223.52" x2="-21.59" y2="-223.52" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-218.44" x2="-7.62" y2="-218.44" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-218.44" x2="-7.62" y2="-223.52" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-223.52"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,73.66,-10.16,R7A,1,,,,"/>
-<approved hash="101,1,83.82,-10.16,R7A,2,,,,"/>
-<approved hash="104,1,142.24,83.82,U$1,VCC,+3V3,,,"/>
-<approved hash="104,1,142.24,43.18,U$1,GND1,GND,,,"/>
-<approved hash="104,1,109.22,-157.48,IC1,VCC,+3V3,,,"/>
-<approved hash="104,1,53.34,-119.38,X2,VDD,+3V3,,,"/>
-<approved hash="104,1,170.18,-205.74,IC3,VDD,+3V3,,,"/>
-<approved hash="106,1,27.94,68.58,ADC,,,,,"/>
-<approved hash="105,1,133.35,-144.78,N$12,,,,,"/>
-<approved hash="113,1,181.61,73.3721,X1,,,,,"/>
-<approved hash="113,1,86.3092,68.4245,Y1,,,,,"/>
-<approved hash="113,1,61.1971,120.781,JP1,,,,,"/>
-<approved hash="113,1,130.81,142.562,LED2,,,,,"/>
-<approved hash="113,1,130.81,132.402,LED3,,,,,"/>
-<approved hash="113,1,130.81,123.512,LED4,,,,,"/>
-<approved hash="113,1,153.945,-152.4,R6,,,,,"/>
-<approved hash="113,1,140.738,-87.63,C2,,,,,"/>
-<approved hash="113,1,227.562,67.31,C4,,,,,"/>
-<approved hash="113,1,229.87,72.6217,C5,,,,,"/>
-<approved hash="113,1,235.182,67.31,C6,,,,,"/>
-<approved hash="113,1,146.071,-121.92,Y2,,,,,"/>
-<approved hash="113,1,151.13,-112.798,C8,,,,,"/>
-<approved hash="113,1,151.13,-127.342,C10,,,,,"/>
-<approved hash="113,1,144.78,-40.1574,IC2,,,,,"/>
-<approved hash="113,1,-45.3983,52.07,LED5,,,,,"/>
-<approved hash="113,1,-56.2017,52.07,LED6,,,,,"/>
-<approved hash="113,1,165.1,-30.1075,J1,,,,,"/>
-<approved hash="113,1,130.81,152.078,LED7,,,,,"/>
-<approved hash="113,1,136.787,-154.94,J2,,,,,"/>
-<approved hash="113,1,144.78,-220.607,J4,,,,,"/>
-<approved hash="115,1,167.64,71.12,ANT_OUT,,,,,"/>
+<approved hash="104,1,-5.08,-218.44,BATT1,V1,N$36,,,"/>
+<approved hash="104,1,-5.08,-223.52,BATT1,V2,N$36,,,"/>
+<approved hash="104,1,10.16,-220.98,BATT1,V-,GND,,,"/>
 </errors>
 </schematic>
 </drawing>
