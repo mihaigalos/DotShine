@@ -28859,7 +28859,7 @@ http://dangerousprototypes.com</description>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="D7" library="SparkFun" deviceset="SOLAR-IXYS" device="-" value="Solar Cell 4V"/>
 <part name="J7" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="200Ω"/>
 </parts>
 <sheets>
 <sheet>
