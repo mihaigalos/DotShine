@@ -28724,6 +28724,402 @@ http://dangerousprototypes.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="QFN24-3X3">
+<description>&lt;h3&gt;24-Pin QFN -  3.0 x 3.0 mm - No center pad&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; No center pad per "Exposed Die Pad Precautions" section of the &lt;a href="http://www.digikey.com/Web%20Export/Supplier%20Content/invensense-1428/pdf/invensense-mems-handling.pdf"&gt;InvenSense MEMS Handling application note&lt;/a&gt;.&lt;/p&gt;</description>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="1.1"/>
+<vertex x="-1.28" y="1.1"/>
+<vertex x="-1.2" y="1.02" curve="-90"/>
+<vertex x="-1.3" y="0.9"/>
+<vertex x="-1.5" y="0.9"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="0.7"/>
+<vertex x="-1.3" y="0.7" curve="-90"/>
+<vertex x="-1.2" y="0.6" curve="-90"/>
+<vertex x="-1.3" y="0.5"/>
+<vertex x="-1.5" y="0.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="-1.1"/>
+<vertex x="-1.28" y="-1.1"/>
+<vertex x="-1.2" y="-1.02" curve="90"/>
+<vertex x="-1.3" y="-0.9"/>
+<vertex x="-1.5" y="-0.9"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="0.3"/>
+<vertex x="-1.3" y="0.3" curve="-90"/>
+<vertex x="-1.2" y="0.2" curve="-90"/>
+<vertex x="-1.3" y="0.1"/>
+<vertex x="-1.5" y="0.1"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="-0.1"/>
+<vertex x="-1.3" y="-0.1" curve="-90"/>
+<vertex x="-1.2" y="-0.2" curve="-90"/>
+<vertex x="-1.3" y="-0.3"/>
+<vertex x="-1.5" y="-0.3"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.5" y="-0.5"/>
+<vertex x="-1.3" y="-0.5" curve="-90"/>
+<vertex x="-1.2" y="-0.6" curve="-90"/>
+<vertex x="-1.3" y="-0.7"/>
+<vertex x="-1.5" y="-0.7"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.1" y="-1.5"/>
+<vertex x="-1.1" y="-1.28"/>
+<vertex x="-1.02" y="-1.2" curve="-90"/>
+<vertex x="-0.9" y="-1.3"/>
+<vertex x="-0.9" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-0.7" y="-1.5"/>
+<vertex x="-0.7" y="-1.3" curve="-90"/>
+<vertex x="-0.6" y="-1.2" curve="-90"/>
+<vertex x="-0.5" y="-1.3"/>
+<vertex x="-0.5" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.1" y="-1.5"/>
+<vertex x="1.1" y="-1.28"/>
+<vertex x="1.02" y="-1.2" curve="90"/>
+<vertex x="0.9" y="-1.3"/>
+<vertex x="0.9" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-0.3" y="-1.5"/>
+<vertex x="-0.3" y="-1.3" curve="-90"/>
+<vertex x="-0.2" y="-1.2" curve="-90"/>
+<vertex x="-0.1" y="-1.3"/>
+<vertex x="-0.1" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="0.1" y="-1.5"/>
+<vertex x="0.1" y="-1.3" curve="-90"/>
+<vertex x="0.2" y="-1.2" curve="-90"/>
+<vertex x="0.3" y="-1.3"/>
+<vertex x="0.3" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="0.5" y="-1.5"/>
+<vertex x="0.5" y="-1.3" curve="-90"/>
+<vertex x="0.6" y="-1.2" curve="-90"/>
+<vertex x="0.7" y="-1.3"/>
+<vertex x="0.7" y="-1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="-1.1"/>
+<vertex x="1.28" y="-1.1"/>
+<vertex x="1.2" y="-1.02" curve="-90"/>
+<vertex x="1.3" y="-0.9"/>
+<vertex x="1.5" y="-0.9"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="-0.7"/>
+<vertex x="1.3" y="-0.7" curve="-90"/>
+<vertex x="1.2" y="-0.6" curve="-90"/>
+<vertex x="1.3" y="-0.5"/>
+<vertex x="1.5" y="-0.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="1.1"/>
+<vertex x="1.28" y="1.1"/>
+<vertex x="1.2" y="1.02" curve="90"/>
+<vertex x="1.3" y="0.9"/>
+<vertex x="1.5" y="0.9"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="-0.3"/>
+<vertex x="1.3" y="-0.3" curve="-90"/>
+<vertex x="1.2" y="-0.2" curve="-90"/>
+<vertex x="1.3" y="-0.1"/>
+<vertex x="1.5" y="-0.1"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="0.1"/>
+<vertex x="1.3" y="0.1" curve="-90"/>
+<vertex x="1.2" y="0.2" curve="-90"/>
+<vertex x="1.3" y="0.3"/>
+<vertex x="1.5" y="0.3"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.5" y="0.5"/>
+<vertex x="1.3" y="0.5" curve="-90"/>
+<vertex x="1.2" y="0.6" curve="-90"/>
+<vertex x="1.3" y="0.7"/>
+<vertex x="1.5" y="0.7"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="1.1" y="1.5"/>
+<vertex x="1.1" y="1.28"/>
+<vertex x="1.02" y="1.2" curve="-90"/>
+<vertex x="0.9" y="1.3"/>
+<vertex x="0.9" y="1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="0.7" y="1.5"/>
+<vertex x="0.7" y="1.3" curve="-90"/>
+<vertex x="0.6" y="1.2" curve="-90"/>
+<vertex x="0.5" y="1.3"/>
+<vertex x="0.5" y="1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.1" y="1.5"/>
+<vertex x="-1.1" y="1.28"/>
+<vertex x="-1.02" y="1.2" curve="90"/>
+<vertex x="-0.9" y="1.3"/>
+<vertex x="-0.9" y="1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="0.3" y="1.5"/>
+<vertex x="0.3" y="1.3" curve="-90"/>
+<vertex x="0.2" y="1.2" curve="-90"/>
+<vertex x="0.1" y="1.3"/>
+<vertex x="0.1" y="1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-0.1" y="1.5"/>
+<vertex x="-0.1" y="1.3" curve="-90"/>
+<vertex x="-0.2" y="1.2" curve="-90"/>
+<vertex x="-0.3" y="1.3"/>
+<vertex x="-0.3" y="1.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-0.5" y="1.5"/>
+<vertex x="-0.5" y="1.3" curve="-90"/>
+<vertex x="-0.6" y="1.2" curve="-90"/>
+<vertex x="-0.7" y="1.3"/>
+<vertex x="-0.7" y="1.5"/>
+</polygon>
+<smd name="1" x="-1.5525" y="1" dx="0.25" dy="0.495" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-1.5" y="0.6" dx="0.25" dy="0.6" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-1.5" y="0.2" dx="0.25" dy="0.6" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-1.5" y="-0.2" dx="0.25" dy="0.6" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-1.5" y="-0.6" dx="0.25" dy="0.6" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-1.5525" y="-1" dx="0.25" dy="0.495" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-1" y="-1.5525" dx="0.25" dy="0.495" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="-0.6" y="-1.5" dx="0.25" dy="0.6" layer="1" rot="R180" cream="no"/>
+<smd name="9" x="-0.2" y="-1.5" dx="0.25" dy="0.6" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="0.2" y="-1.5" dx="0.25" dy="0.6" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="0.6" y="-1.5" dx="0.25" dy="0.6" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="1" y="-1.5525" dx="0.25" dy="0.495" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="1.5525" y="-1" dx="0.25" dy="0.495" layer="1" rot="R270" cream="no"/>
+<smd name="14" x="1.5" y="-0.6" dx="0.25" dy="0.6" layer="1" rot="R270" cream="no"/>
+<smd name="15" x="1.5" y="-0.2" dx="0.25" dy="0.6" layer="1" rot="R270" cream="no"/>
+<smd name="16" x="1.5" y="0.2" dx="0.25" dy="0.6" layer="1" rot="R270" cream="no"/>
+<smd name="17" x="1.5" y="0.6" dx="0.25" dy="0.6" layer="1" rot="R270" cream="no"/>
+<smd name="18" x="1.5525" y="1" dx="0.25" dy="0.495" layer="1" rot="R270" cream="no"/>
+<smd name="19" x="1" y="1.5525" dx="0.25" dy="0.495" layer="1" cream="no"/>
+<smd name="20" x="0.6" y="1.5" dx="0.25" dy="0.6" layer="1" cream="no"/>
+<smd name="21" x="0.2" y="1.5" dx="0.25" dy="0.6" layer="1" cream="no"/>
+<smd name="22" x="-0.2" y="1.5" dx="0.25" dy="0.6" layer="1" cream="no"/>
+<smd name="23" x="-0.6" y="1.5" dx="0.25" dy="0.6" layer="1" cream="no"/>
+<polygon width="0" layer="51">
+<vertex x="-0.85" y="0.55"/>
+<vertex x="-0.85" y="-0.62" curve="90"/>
+<vertex x="-0.7" y="-0.77"/>
+<vertex x="0.7" y="-0.77" curve="90"/>
+<vertex x="0.85" y="-0.62"/>
+<vertex x="0.85" y="0.62" curve="90"/>
+<vertex x="0.7" y="0.77"/>
+<vertex x="-0.63" y="0.77"/>
+</polygon>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.25" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="-1.6" x2="1.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-1.6" x2="1.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.25" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="1.25" x2="-1.25" y2="1.6" width="0.2032" layer="21"/>
+<circle x="-1.746" y="1.746" radius="0.254" width="0" layer="21"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-1.13" y1="1.2" x2="-1.13" y2="1.8" width="0" layer="41"/>
+<wire x1="1.13" y1="1.8" x2="1.13" y2="1.2" width="0" layer="41"/>
+<wire x1="1.2" y1="1.13" x2="1.8" y2="1.13" width="0" layer="41"/>
+<wire x1="1.8" y1="-1.13" x2="1.2" y2="-1.13" width="0" layer="41"/>
+<wire x1="1.13" y1="-1.2" x2="1.13" y2="-1.8" width="0" layer="41"/>
+<wire x1="-1.13" y1="-1.8" x2="-1.13" y2="-1.2" width="0" layer="41"/>
+<wire x1="-1.2" y1="-1.13" x2="-1.8" y2="-1.13" width="0" layer="41"/>
+<wire x1="-1.8" y1="1.13" x2="-1.2" y2="1.13" width="0" layer="41"/>
+<polygon width="0.002540625" layer="1">
+<vertex x="-1.5" y="1.125"/>
+<vertex x="-1.305" y="1.125"/>
+<vertex x="-1.2" y="1.02"/>
+<vertex x="-1.2" y="0.875"/>
+<vertex x="-1.5" y="0.875"/>
+</polygon>
+<smd name="24" x="-1" y="1.5525" dx="0.25" dy="0.495" layer="1" cream="no"/>
+<polygon width="0.002540625" layer="1">
+<vertex x="1.125" y="-1.5"/>
+<vertex x="1.125" y="-1.305"/>
+<vertex x="1.02" y="-1.2"/>
+<vertex x="0.875" y="-1.2"/>
+<vertex x="0.875" y="-1.5"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="-1.125" y="-1.5"/>
+<vertex x="-1.125" y="-1.305"/>
+<vertex x="-1.02" y="-1.2"/>
+<vertex x="-0.875" y="-1.2"/>
+<vertex x="-0.875" y="-1.5"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="-1.5" y="-1.125"/>
+<vertex x="-1.305" y="-1.125"/>
+<vertex x="-1.2" y="-1.02"/>
+<vertex x="-1.2" y="-0.875"/>
+<vertex x="-1.5" y="-0.875"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="1.5" y="-1.125"/>
+<vertex x="1.305" y="-1.125"/>
+<vertex x="1.2" y="-1.02"/>
+<vertex x="1.2" y="-0.875"/>
+<vertex x="1.5" y="-0.875"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="1.5" y="1.125"/>
+<vertex x="1.305" y="1.125"/>
+<vertex x="1.2" y="1.02"/>
+<vertex x="1.2" y="0.875"/>
+<vertex x="1.5" y="0.875"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="1.125" y="1.5"/>
+<vertex x="1.125" y="1.305"/>
+<vertex x="1.02" y="1.2"/>
+<vertex x="0.875" y="1.2"/>
+<vertex x="0.875" y="1.5"/>
+</polygon>
+<polygon width="0.002540625" layer="1">
+<vertex x="-1.125" y="1.5"/>
+<vertex x="-1.125" y="1.305"/>
+<vertex x="-1.02" y="1.2"/>
+<vertex x="-0.875" y="1.2"/>
+<vertex x="-0.875" y="1.5"/>
+</polygon>
+<rectangle x1="-1.203" y1="0.773" x2="-1.099" y2="1.226" layer="29"/>
+<rectangle x1="-1.0515" y1="-1.3775" x2="-0.9475" y2="-0.9245" layer="29" rot="R90"/>
+<rectangle x1="1.099" y1="-1.226" x2="1.203" y2="-0.773" layer="29" rot="R180"/>
+<rectangle x1="0.9475" y1="0.9245" x2="1.0515" y2="1.3775" layer="29" rot="R270"/>
+<rectangle x1="-1.0515" y1="0.9245" x2="-0.9475" y2="1.3775" layer="29" rot="R270"/>
+<rectangle x1="-1.203" y1="-1.226" x2="-1.099" y2="-0.773" layer="29"/>
+<rectangle x1="0.9475" y1="-1.3775" x2="1.0515" y2="-0.9245" layer="29" rot="R90"/>
+<rectangle x1="1.099" y1="0.773" x2="1.203" y2="1.226" layer="29" rot="R180"/>
+<rectangle x1="-1.725" y1="0.475" x2="-1.275" y2="0.725" layer="31"/>
+<rectangle x1="-1.725" y1="0.875" x2="-1.275" y2="1.125" layer="31"/>
+<rectangle x1="-1.725" y1="0.075" x2="-1.275" y2="0.325" layer="31"/>
+<rectangle x1="-1.725" y1="-0.325" x2="-1.275" y2="-0.075" layer="31"/>
+<rectangle x1="-1.725" y1="-0.725" x2="-1.275" y2="-0.475" layer="31"/>
+<rectangle x1="-1.725" y1="-1.125" x2="-1.275" y2="-0.875" layer="31"/>
+<rectangle x1="-1.225" y1="-1.625" x2="-0.775" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="-0.825" y1="-1.625" x2="-0.375" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="-0.425" y1="-1.625" x2="0.025" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="-0.025" y1="-1.625" x2="0.425" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="0.375" y1="-1.625" x2="0.825" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="0.775" y1="-1.625" x2="1.225" y2="-1.375" layer="31" rot="R90"/>
+<rectangle x1="1.275" y1="-1.125" x2="1.725" y2="-0.875" layer="31" rot="R180"/>
+<rectangle x1="1.275" y1="-0.725" x2="1.725" y2="-0.475" layer="31" rot="R180"/>
+<rectangle x1="1.275" y1="0.075" x2="1.725" y2="0.325" layer="31" rot="R180"/>
+<rectangle x1="1.275" y1="-0.325" x2="1.725" y2="-0.075" layer="31" rot="R180"/>
+<rectangle x1="1.275" y1="0.475" x2="1.725" y2="0.725" layer="31" rot="R180"/>
+<rectangle x1="1.275" y1="0.875" x2="1.725" y2="1.125" layer="31" rot="R180"/>
+<rectangle x1="0.775" y1="1.375" x2="1.225" y2="1.625" layer="31" rot="R270"/>
+<rectangle x1="0.375" y1="1.375" x2="0.825" y2="1.625" layer="31" rot="R270"/>
+<rectangle x1="-0.025" y1="1.375" x2="0.425" y2="1.625" layer="31" rot="R270"/>
+<rectangle x1="-0.425" y1="1.375" x2="0.025" y2="1.625" layer="31" rot="R270"/>
+<rectangle x1="-0.825" y1="1.375" x2="-0.375" y2="1.625" layer="31" rot="R270"/>
+<rectangle x1="-1.225" y1="1.375" x2="-0.775" y2="1.625" layer="31" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU-9250">
+<description>&lt;b&gt;MPU-9250&lt;/b&gt;&lt;br /&gt;
+9DOF IMU</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="!CS" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="AD0/SDO" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="AUX_CL" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="AUX_DA" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="FSYNC" x="-17.78" y="0" length="middle"/>
+<pin name="GND" x="-17.78" y="-5.08" length="middle"/>
+<pin name="INT" x="-17.78" y="2.54" length="middle"/>
+<pin name="REGOUT" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCL/SCLK" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SDA/SDI" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDDIO" x="-17.78" y="5.08" length="middle"/>
+<text x="-12.7" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU-9250" prefix="U">
+<description>&lt;h3&gt;MPU-9250 9 Degree of Freedom IMU &lt;/h3&gt;
+&lt;p&gt;System in Package that contains MPU-6500 &amp; AK8963 &lt;br&gt;
+NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace routing.
+&lt;br&gt;&lt;a href=”https://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU9250REV1.0.pdf”&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/14001”&gt;SparkFun 9DoF Razor IMU M0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13762”&gt;SparkFun IMU Breakout - MPU-9250&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MPU-9250" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="QFN24-3X3">
+<connects>
+<connect gate="G$1" pin="!CS" pad="22"/>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18 20"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="1 8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13192"/>
+<attribute name="VALUE" value="9DoF IMU" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28791,9 +29187,6 @@ http://dangerousprototypes.com</description>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C3216"/>
-<part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
-<part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603"/>
@@ -28860,6 +29253,14 @@ http://dangerousprototypes.com</description>
 <part name="D7" library="SparkFun" deviceset="SOLAR-IXYS" device="-" value="Solar Cell 4V"/>
 <part name="J7" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="200Ω"/>
+<part name="U6" library="SparkFun-Sensors" deviceset="MPU-9250" device="" value="9DoF IMU"/>
+<part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
+<part name="C12" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
+<part name="C14" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28983,9 +29384,6 @@ Periphery_on = High: UV Sensor</text>
 <instance part="SUPPLY18" gate="GND" x="345.44" y="-120.65"/>
 <instance part="R6" gate="G$1" x="320.04" y="-110.49" rot="R90"/>
 <instance part="+3V13" gate="G$1" x="320.04" y="-102.87"/>
-<instance part="C2" gate="G$1" x="467.36" y="-266.7" rot="R180"/>
-<instance part="+3V15" gate="G$1" x="467.36" y="-259.08"/>
-<instance part="SUPPLY20" gate="GND" x="467.36" y="-271.78"/>
 <instance part="C4" gate="G$1" x="391.16" y="63.5"/>
 <instance part="C5" gate="G$1" x="393.7" y="66.04" rot="R90"/>
 <instance part="C6" gate="G$1" x="398.78" y="63.5"/>
@@ -29052,6 +29450,14 @@ Periphery_on = High: UV Sensor</text>
 <instance part="D7" gate="G$1" x="-35.56" y="-251.46" rot="MR270"/>
 <instance part="J7" gate="G$1" x="-21.59" y="-220.98" rot="R270"/>
 <instance part="R9" gate="G$1" x="-27.94" y="-219.71" rot="R90"/>
+<instance part="U6" gate="G$1" x="154.94" y="-358.14"/>
+<instance part="SUPPLY23" gate="GND" x="137.16" y="-365.76"/>
+<instance part="SUPPLY24" gate="GND" x="187.96" y="-370.84"/>
+<instance part="C12" gate="G$1" x="127" y="-363.22"/>
+<instance part="SUPPLY19" gate="GND" x="127" y="-370.84"/>
+<instance part="C14" gate="G$1" x="109.22" y="-353.06"/>
+<instance part="SUPPLY34" gate="GND" x="109.22" y="-360.68"/>
+<instance part="SUPPLY36" gate="GND" x="121.92" y="-365.76"/>
 </instances>
 <busses>
 </busses>
@@ -29140,10 +29546,6 @@ Periphery_on = High: UV Sensor</text>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="340.36" y1="-118.11" x2="345.44" y2="-118.11" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY20" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -29243,6 +29645,30 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="10.16" y1="-220.98" x2="20.32" y2="-220.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="FSYNC"/>
+<wire x1="137.16" y1="-358.14" x2="121.92" y2="-358.14" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-358.14" x2="121.92" y2="-363.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY36" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
+<wire x1="187.96" y1="-368.3" x2="187.96" y2="-363.22" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="AD0/SDO"/>
+<wire x1="172.72" y1="-363.22" x2="187.96" y2="-363.22" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -29289,6 +29715,11 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="228.6" y1="-59.69" x2="224.79" y2="-59.69" width="0.1524" layer="91"/>
 <label x="224.79" y="-59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="G$1" pin="7"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="SDA/SDI"/>
+<wire x1="172.72" y1="-360.68" x2="175.26" y2="-360.68" width="0.1524" layer="91"/>
+<label x="175.26" y="-360.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -29459,10 +29890,6 @@ Periphery_on = High: UV Sensor</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="+3V15" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -29658,6 +30085,11 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="228.6" y1="-57.15" x2="224.79" y2="-57.15" width="0.1524" layer="91"/>
 <label x="224.79" y="-57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="SCL/SCLK"/>
+<wire x1="172.72" y1="-358.14" x2="175.26" y2="-358.14" width="0.1524" layer="91"/>
+<label x="175.26" y="-358.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PUSH" class="0">
@@ -29985,6 +30417,11 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="138.43" y1="-205.74" x2="130.81" y2="-205.74" width="0.1524" layer="91"/>
 <label x="130.81" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="INT"/>
+<wire x1="137.16" y1="-355.6" x2="134.62" y2="-355.6" width="0.1524" layer="91"/>
+<label x="134.62" y="-355.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="OUTAB" class="0">
 <segment>
@@ -30086,6 +30523,16 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="337.82" y1="-267.97" x2="335.28" y2="-267.97" width="0.1524" layer="91"/>
 <label x="335.28" y="-267.97" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDD"/>
+<wire x1="137.16" y1="-350.52" x2="127" y2="-350.52" width="0.1524" layer="91"/>
+<label x="127" y="-350.52" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="127" y1="-350.52" x2="109.22" y2="-350.52" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="VDDIO"/>
+<wire x1="137.16" y1="-353.06" x2="137.16" y2="-350.52" width="0.1524" layer="91"/>
+<junction x="137.16" y="-350.52"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -30112,6 +30559,13 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="-5.08" y1="-218.44" x2="-7.62" y2="-218.44" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-218.44" x2="-7.62" y2="-223.52" width="0.1524" layer="91"/>
 <junction x="-7.62" y="-223.52"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="REGOUT"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="-360.68" x2="127" y2="-360.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
