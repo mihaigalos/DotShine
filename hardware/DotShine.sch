@@ -29316,6 +29316,10 @@ Periphery_on = High: UV Sensor</text>
 <text x="360.68" y="-299.72" size="3.81" layer="95">Sensors</text>
 <wire x1="416.56" y1="2.54" x2="276.86" y2="2.54" width="0.1524" layer="95" style="longdash"/>
 <wire x1="271.78" y1="91.44" x2="271.78" y2="7.62" width="0.1524" layer="95" style="longdash"/>
+<text x="134.62" y="-203.2" size="1.778" layer="91" rot="R180">STAT will be held high,
+on no connection.
+Cannot connect 
+to other nINT!</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="29.21" y="67.31" smashed="yes">
@@ -30194,12 +30198,16 @@ Periphery_on = High: UV Sensor</text>
 <wire x1="205.74" y1="-287.02" x2="205.74" y2="-281.94" width="0.1524" layer="91"/>
 <pinref part="R7" gate="C" pin="2"/>
 <wire x1="205.74" y1="-281.94" x2="205.74" y2="-276.86" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-276.86" x2="205.74" y2="-266.7" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-276.86" x2="205.74" y2="-271.78" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-271.78" x2="205.74" y2="-266.7" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="-281.94" x2="205.74" y2="-281.94" width="0.1524" layer="91"/>
 <junction x="205.74" y="-281.94"/>
 <pinref part="R7" gate="B" pin="2"/>
 <wire x1="187.96" y1="-276.86" x2="205.74" y2="-276.86" width="0.1524" layer="91"/>
 <junction x="205.74" y="-276.86"/>
+<pinref part="R7" gate="A" pin="2"/>
+<wire x1="187.96" y1="-271.78" x2="205.74" y2="-271.78" width="0.1524" layer="91"/>
+<junction x="205.74" y="-271.78"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
@@ -30753,14 +30761,14 @@ Periphery_on = High: UV Sensor</text>
 <label x="57.15" y="64.77" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="STAT"/>
-<wire x1="138.43" y1="-205.74" x2="130.81" y2="-205.74" width="0.1524" layer="91"/>
-<label x="130.81" y="-205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U6" gate="G$1" pin="INT"/>
 <wire x1="137.16" y1="-355.6" x2="134.62" y2="-355.6" width="0.1524" layer="91"/>
 <label x="134.62" y="-355.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="A" pin="1"/>
+<wire x1="177.8" y1="-271.78" x2="177.8" y2="-261.62" width="0.1524" layer="91"/>
+<label x="177.8" y="-261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="OUTAB" class="0">
