@@ -29250,7 +29250,6 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
-<part name="D7" library="SparkFun" deviceset="SOLAR-IXYS" device="-" value="Solar Cell 4V"/>
 <part name="J7" library="solderjumper" deviceset="SOLDERJUMPER.2" device=".MED"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="200Ω"/>
 <part name="U6" library="SparkFun-Sensors" deviceset="MPU-9250" device="" value="9DoF IMU"/>
@@ -29763,10 +29762,6 @@ to other nINT!</text>
 <instance part="+3V18" gate="G$1" x="334.01" y="-240.03" smashed="yes">
 <attribute name="VALUE" x="331.47" y="-245.11" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D7" gate="G$1" x="-35.56" y="-251.46" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-36.0426" y="-254" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="-33.2486" y="-254" size="1.778" layer="96" rot="MR270"/>
-</instance>
 <instance part="J7" gate="G$1" x="-21.59" y="-220.98" smashed="yes" rot="R270">
 <attribute name="NAME" x="-20.32" y="-219.71" size="1.016" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-24.13" y="-219.71" size="1.016" layer="96" rot="R270"/>
@@ -29946,9 +29941,6 @@ to other nINT!</text>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <wire x1="-25.4" y1="-256.54" x2="-25.4" y2="-266.7" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="-35.56" y1="-256.54" x2="-25.4" y2="-256.54" width="0.1524" layer="91"/>
-<junction x="-25.4" y="-256.54"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="-"/>
@@ -30687,9 +30679,6 @@ to other nINT!</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="-25.4" y1="-246.38" x2="-17.78" y2="-246.38" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="A"/>
-<wire x1="-25.4" y1="-246.38" x2="-35.56" y2="-246.38" width="0.1524" layer="91"/>
-<junction x="-25.4" y="-246.38"/>
 </segment>
 </net>
 <net name="N$25" class="0">
